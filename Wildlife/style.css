@@ -1,5 +1,75 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    margin: 0;
+}
+
+#title {
+    text-align: center;
+    height: 755px;
+    width: 100%;
     background-color: #7ab0ca;
     background-image: url(pic/background.png);
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.topic {
+    margin: 0;
+    font-family: 'Bowlby One SC', cursive;
+    font: bold;
+    font-size: 100px;
+    letter-spacing: 8px;
+    color: #98424b;
+    -webkit-text-stroke: 2px #cbd4d1;
+    padding-top: 10%;
+}
+
+.hyperlink-star {
+    text-decoration: none;
+    color: black;
+    transition: 2s;
+}
+
+#box {
+    margin-top: 13%;
+}
+
+.start {
+    background-color: #B5D6B5;
+    width: 210px;
+    height: 50px;
+    text-align: center;
+    border: 5px solid #5A7666;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.start-dot {
+    font-family: 'Mitr', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    margin: 0;
+}
+
+.start:hover {
+    box-shadow: 3px 3px 50px rgb(83, 99, 90);
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+/* name */
+
+#name {
+    background-color: #98424b;
+    height: 755px;
+}
+
+.name-text {
+    margin: 0;
 }
