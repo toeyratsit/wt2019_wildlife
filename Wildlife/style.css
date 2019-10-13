@@ -189,3 +189,42 @@ img {
     margin-top: 10%;
     box-shadow: 5px 8px 5px rgb(83, 99, 90);
 }
+
+.mammal-box {
+    background-color: #FFE4B5;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: auto;
+    padding-top: 10;
+    margin-top: 10%;
+    box-shadow: 5px 8px 5px rgb(83, 99, 90);
+}
+
+.bird-box {
+    background-color: #B2E2FF;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: auto;
+    padding-top: 10;
+    margin-top: 10%;
+    box-shadow: 5px 8px 5px rgb(83, 99, 90);
+}
+
+.fish-box {
+    background-color: #95BAFC;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: auto;
+    padding-top: 10;
+    margin-top: 10%;
+    box-shadow: 5px 8px 5px rgb(83, 99, 90);
+}
