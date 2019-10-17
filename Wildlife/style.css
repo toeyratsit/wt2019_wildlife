@@ -229,6 +229,33 @@ img {
     box-shadow: 5px 8px 5px rgb(83, 99, 90);
 }
 
+
+/* ***** test สี hover ***** */
+
+.turtle:hover {
+    background-color: #66ffa3;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.mammal-box:hover {
+    background-color: rgb(255, 208, 56);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.bird-box:hover {
+    background-color: rgb(95, 191, 251);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.fish-box:hover {
+    background-color: rgb(75, 141, 255);
+    transition: 1s;
+    cursor: pointer;
+}
+
 .row:after {
     content: "";
     display: table;
