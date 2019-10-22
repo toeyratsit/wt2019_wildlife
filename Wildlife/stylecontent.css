@@ -1,0 +1,286 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('http://pluspng.com/img-png/ocean-background-png-hd-ocean-floor-background-png-1280.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Mitr', sans-serif;
+}
+
+p {
+    font-family: 'Mitr', sans-serif;
+}
+
+#title {
+    text-align: center;
+    height: 755px;
+    width: 100%;
+    background-color: #7ab0ca;
+    background-image: url(pic/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.topic {
+    margin: 0;
+    font-family: 'Bowlby One SC', cursive;
+    font: bold;
+    font-size: 100px;
+    letter-spacing: 8px;
+    color: #98424b;
+    -webkit-text-stroke: 2px #cbd4d1;
+    padding-top: 10%;
+}
+
+.hyperlink-start {
+    text-decoration: none;
+    color: black;
+}
+
+#box {
+    margin-top: 13%;
+}
+
+.start {
+    background-color: #B5D6B5;
+    width: 210px;
+    height: 50px;
+    text-align: center;
+    border: 5px solid #5A7666;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.start-dot {
+    font-family: 'Mitr', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    margin: 0;
+}
+
+.start:hover {
+    box-shadow: 3px 3px 50px rgb(83, 99, 90);
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+/* history */
+
+#history {
+    background-image: url(pic/background021.png), linear-gradient(#3e594a, #607b68, #89a688);
+    background-size: 100%;
+    height: 760px;
+}
+
+img {
+    position: absolute;
+}
+
+.flower {
+    width: 100%;
+    height: 100%;
+}
+
+.animal {
+    margin: 0;
+    font-family: 'Mitr', sans-serif;
+    text-align: center;
+    padding-top: 15%;
+    font-size: 64px;
+    font-weight: 200;
+}
+
+.line {
+    text-align: center;
+    margin: 0;
+}
+
+.data-his {
+    font-size: 18px;
+    font-family: 'Mitr', sans-serif;
+    text-indent: 100px;
+    text-align: justify;
+    line-height: 3;
+    width: 65%;
+    margin-left: 17%;
+    display: inline-block;
+}
+
+.hyperlink-name {
+    text-decoration: none;
+    color: unset;
+}
+
+#box-name {
+    margin-top: 3%;
+}
+
+.name {
+    background-color: #B5D6B5;
+    width: 280px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.name-dot {
+    font-family: 'Mitr', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    margin: auto;
+    padding: 8;
+}
+
+.name:hover {
+    background-color: #3e594a;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.name-dot:hover {
+    color: #b3cba7;
+    transition: 0.5s;
+}
+
+
+/* name */
+
+#name {
+    background-image: url(pic/background03.png), linear-gradient(#89a688, #b3cba7);
+    background-size: 100%;
+    height: 755px;
+}
+
+.flower2 {
+    width: 100%;
+}
+
+#list {
+    text-align: center;
+    padding-top: 3%;
+}
+
+#one,
+#two,
+#three,
+#four {
+    width: 25%;
+    float: left;
+}
+
+.turtle {
+    background-color: #92E28B;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: auto;
+    padding-top: 10;
+    margin-top: 10%;
+    box-shadow: 5px 8px 5px rgb(83, 99, 90);
+}
+
+.mammal-box {
+    background-color: #FFE4B5;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: auto;
+    padding-top: 10;
+    margin-top: 10%;
+    box-shadow: 5px 8px 5px rgb(83, 99, 90);
+}
+
+.bird-box {
+    background-color: #B2E2FF;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: auto;
+    padding-top: 10;
+    margin-top: 10%;
+    box-shadow: 5px 8px 5px rgb(83, 99, 90);
+}
+
+.fish-box {
+    background-color: #95BAFC;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: auto;
+    padding-top: 10;
+    margin-top: 10%;
+    box-shadow: 5px 8px 5px rgb(83, 99, 90);
+}
+
+
+/* ***** test สี hover ***** */
+
+.turtle:hover {
+    background-color: #66ffa3;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.mammal-box:hover {
+    background-color: rgb(255, 208, 56);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.bird-box:hover {
+    background-color: rgb(95, 191, 251);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.fish-box:hover {
+    background-color: rgb(75, 141, 255);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+.div-pic {
+    display: inline-block;
+}
+
+.header,
+.p-text {
+    margin-top: 30;
+    margin-block-start: 5 auto;
+    margin-left: 80vh;
+}
