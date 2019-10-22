@@ -24,6 +24,26 @@ p {
     background-size: cover;
     background-position: center;
 }
+.text1,.text2{
+    animation: text 3s 1;
+    
+}
+
+@keyframes text{
+    0%{
+        color:#98424b;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: 40px;
+    }
+}
+
 
 .topic {
     margin: 0;
@@ -74,7 +94,7 @@ p {
 /* history */
 
 #history {
-    background-image: url(/pic/background021.png), linear-gradient(#3e594a, #607b68, #89a688);
+    background-image: url(pic/background021.png), linear-gradient(#3e594a, #607b68, #89a688);
     background-size: 100%;
     height: 760px;
 }
@@ -155,7 +175,7 @@ img {
 /* name */
 
 #name {
-    background-image: url(/pic/background03.png), linear-gradient(#89a688, #b3cba7);
+    background-image: url(pic/background03.png), linear-gradient(#89a688, #b3cba7);
     background-size: 100%;
     height: 755px;
 }
