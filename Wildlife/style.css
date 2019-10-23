@@ -9,6 +9,7 @@ body {
 h2 {
     margin: 0;
     font-family: 'Mitr', sans-serif;
+    text-decoration: none;
 }
 
 p {
@@ -69,6 +70,7 @@ a {
 
 #box {
     margin-top: 13%;
+    text-decoration: none;
 }
 
 .start {
@@ -88,6 +90,7 @@ a {
     font-size: 30px;
     color: black;
     margin: 0;
+    text-decoration: none;
 }
 
 .start:hover {
@@ -284,8 +287,9 @@ img {
     height: 300px;
     box-sizing: border-box;
 }
+
 @media screen and (min-width: 1540px) {
-    .turtle{
+    .turtle {
         text-align: center;
         font-size: 18px;
     }
@@ -293,27 +297,30 @@ img {
         text-align: center;
         font-size: 18px;
     }
-    .bird-box{
+    .bird-box {
         text-align: center;
         font-size: 18px;
     }
-    .fish-box{
+    .fish-box {
         text-align: center;
         font-size: 18px;
     }
 }
+
 @media screen and (max-width: 1539px) {
     .mammal-box {
         text-align: center;
         font-size: 17px;
     }
 }
+
 @media screen and (max-width: 1480px) {
     .bird-box {
         text-align: center;
         font-size: 17px;
     }
 }
+
 @media screen and (max-width: 1461px) {
     .mammal-box {
         text-align: center;
@@ -324,6 +331,7 @@ img {
         font-size: 16px;
     }
 }
+
 @media screen and (max-width: 1382px) {
     .mammal-box {
         text-align: center;
@@ -334,12 +342,14 @@ img {
         font-size: 15px;
     }
 }
+
 @media screen and (max-width: 1304px) {
     .mammal-box {
         text-align: center;
         font-size: 14px;
     }
 }
+
 @media screen and (max-width: 1248px) {
     .mammal-box {
         text-align: center;
@@ -350,6 +360,7 @@ img {
         font-size: 14px;
     }
 }
+
 @media screen and (max-width: 1230px) {
     .mammal-box {
         text-align: center;
@@ -360,16 +371,18 @@ img {
         font-size: 14px;
     }
 }
+
 @media screen and (max-width: 1175px) {
     .bird-box {
         text-align: center;
         font-size: 13px;
     }
-    .turtle{
+    .turtle {
         text-align: center;
         font-size: 13px;
     }
 }
+
 @media screen and (max-width: 1094px) {
     .bird-box {
         text-align: center;
@@ -379,5 +392,4 @@ img {
         text-align: center;
         font-size: 16px;
     }
-    
 }
