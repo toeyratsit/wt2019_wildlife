@@ -213,7 +213,6 @@ img {
     width: 65%;
     height: 14%;
     text-align: center;
-    font-size: 18px;
     border-radius: 10px;
     margin: auto;
     padding-top: 10;
@@ -223,10 +222,9 @@ img {
 
 .bird-box {
     background-color: #B2E2FF;
-    width: 40%;
+    width: 45%;
     height: 10%;
     text-align: center;
-    font-size: 18px;
     border-radius: 10px;
     margin: auto;
     padding-top: 10;
@@ -239,7 +237,6 @@ img {
     width: 40%;
     height: 10%;
     text-align: center;
-    font-size: 18px;
     border-radius: 10px;
     margin: auto;
     padding-top: 10;
@@ -286,4 +283,101 @@ img {
     padding: 10px;
     height: 300px;
     box-sizing: border-box;
+}
+@media screen and (min-width: 1540px) {
+    .turtle{
+        text-align: center;
+        font-size: 18px;
+    }
+    .mammal-box {
+        text-align: center;
+        font-size: 18px;
+    }
+    .bird-box{
+        text-align: center;
+        font-size: 18px;
+    }
+    .fish-box{
+        text-align: center;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1539px) {
+    .mammal-box {
+        text-align: center;
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 1480px) {
+    .bird-box {
+        text-align: center;
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 1461px) {
+    .mammal-box {
+        text-align: center;
+        font-size: 16px;
+    }
+    .bird-box {
+        text-align: center;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1382px) {
+    .mammal-box {
+        text-align: center;
+        font-size: 15px;
+    }
+    .bird-box {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1304px) {
+    .mammal-box {
+        text-align: center;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1248px) {
+    .mammal-box {
+        text-align: center;
+        font-size: 14px;
+    }
+    .bird-box {
+        text-align: center;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1230px) {
+    .mammal-box {
+        text-align: center;
+        font-size: 13px;
+    }
+    .bird-box {
+        text-align: center;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1175px) {
+    .bird-box {
+        text-align: center;
+        font-size: 13px;
+    }
+    .turtle{
+        text-align: center;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1094px) {
+    .bird-box {
+        text-align: center;
+        font-size: 12px;
+    }
+    .fish-box {
+        text-align: center;
+        font-size: 16px;
+    }
+    
 }
