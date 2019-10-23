@@ -22,7 +22,7 @@ a {
 
 #title {
     text-align: center;
-    height: 755px;
+    height: 100%;
     width: 100%;
     background-color: #7ab0ca;
     background-image: url(pic/background.png);
@@ -102,7 +102,7 @@ a {
 #history {
     background-image: url(pic/background021.png), linear-gradient(#3e594a, #607b68, #89a688);
     background-size: 100%;
-    height: 760px;
+    height: 100%;
 }
 
 img {
@@ -183,7 +183,7 @@ img {
 #name {
     background-image: url(pic/background03.png), linear-gradient(#89a688, #b3cba7);
     background-size: 100%;
-    height: 755px;
+    height: 100%;
 }
 
 .flower2 {
