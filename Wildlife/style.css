@@ -195,18 +195,10 @@ img {
     padding-top: 3%;
 }
 
-#one,
-#two,
-#three,
-#four {
-    width: 25%;
-    float: left;
-}
-
 .turtle {
     background-color: #92E28B;
-    width: 160px;
-    height: 40px;
+    width: 30%;
+    height: 10%;
     text-align: center;
     font-size: 18px;
     border-radius: 10px;
@@ -218,8 +210,8 @@ img {
 
 .mammal-box {
     background-color: #FFE4B5;
-    width: 160px;
-    height: 40px;
+    width: 65%;
+    height: 14%;
     text-align: center;
     font-size: 18px;
     border-radius: 10px;
@@ -231,8 +223,8 @@ img {
 
 .bird-box {
     background-color: #B2E2FF;
-    width: 160px;
-    height: 40px;
+    width: 40%;
+    height: 10%;
     text-align: center;
     font-size: 18px;
     border-radius: 10px;
@@ -244,8 +236,8 @@ img {
 
 .fish-box {
     background-color: #95BAFC;
-    width: 160px;
-    height: 40px;
+    width: 40%;
+    height: 10%;
     text-align: center;
     font-size: 18px;
     border-radius: 10px;
