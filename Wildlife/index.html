@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Wildlife</title>
 </head>
 
 <body>
+    
     <section id="title">
         <div class="position">
             <h1 class="topic">
@@ -19,14 +24,12 @@
                 <span class="text2">L I F E</span>
             </h1>
 
-            <div id="box">
-                <div class="start">
-                    <h2 class="start-dot"><a href="#history" class="hyperlink-start">จุดเริ่มต้น</a></h2>
-                </div>
+        <div id="box">
+            <div class="start">
+                <h2 class="start-dot"><a href="#history" class="hyperlink-start">จุดเริ่มต้น</a></h2>
             </div>
-        </div>
-
     </section>
+
 
     <section id="history">
         <div class="main">
@@ -46,45 +49,56 @@
 
     <section id="name">
         <div id="list">
-            <div id="one">
-                <h2 class="reptile">สัตว์ป่าจำพวก<br>สัตว์เลื้อยคลาน</h2>
-                <a href="turtle.html" target="_blank">
-                    <p class="turtle">เต่ามะเฟือง</p>
-                </a>
-            </div>
-            <div id="two">
-                <h2 class="mammal">สัตว์ป่าจำพวก<br>สัตว์เลี้ยงลูกด้วยนม</h2>
-                <div class="row">
-                    <div class="column">
-                        <p class="mammal-box">กระซู่</p>
-                        <p class="mammal-box">กวางผาจีน</p>
-                        <p class="mammal-box">กูปรี</p>
-                        <p class="mammal-box">เก้งหม้อ</p>
-                        <p class="mammal-box">ควายป่า</p>
-                        <p class="mammal-box">พะยูน</p>
-                        <p class="mammal-box">แมวลายหินอ่อน</p>
-                    </div>
-                    <!-- new column-->
-                    <div class="column">
-                        <p class="mammal-box">แรดชวา</p>
-                        <p class="mammal-box">ละมั่ง</p>
-                        <p class="mammal-box">เลียงผา</p>
-                        <p class="mammal-box">วาฬบรูด้า</p>
-                        <p class="mammal-box">วาฬโอมูระ</p>
-                        <p class="mammal-box">สมเสร็จ</p>
-                        <p class="mammal-box">สมัน</p>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div id="one">
+                        <h2 class="reptile">สัตว์ป่าจำพวก<br>สัตว์เลื้อยคลาน</h2>
+                        <a href="turtle.html" target="_blank">
+                            <p class="turtle">เต่ามะเฟือง</p>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div id="three">
-                <h2 class="bird">สัตว์ป่าจำพวก<br>นก</h2>
-                <p class="bird-box">นกกระเรียน</p>
-                <p class="bird-box">นกเจ้าฟ้าหญิงสิรินธร</p>
-                <p class="bird-box">นกแต้วแล้วท้องดำ</p>
-            </div>
-            <div id="four">
-                <h2 class="fish">สัตว์ป่าจำพวก<br>ปลา</h2>
-                <p class="fish-box">ปลาฉลามวาฬ</p>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div id="two">
+                        <h2 class="mammal">สัตว์ป่าจำพวก<br>สัตว์เลี้ยงลูกด้วยนม</h2>
+                        <div class="row">
+                            <div class="column">
+                                <p class="mammal-box">กระซู่</p>
+                                <p class="mammal-box">กวางผาจีน</p>
+                                <p class="mammal-box">กูปรี</p>
+                                <p class="mammal-box">เก้งหม้อ</p>
+                                <p class="mammal-box">ควายป่า</p>
+                                <p class="mammal-box">พะยูน</p>
+                                <p class="mammal-box">แมวลายหินอ่อน</p>
+                            </div>
+                            <!-- new column-->
+                            <div class="column">
+                                <p class="mammal-box">แรดชวา</p>
+                                <p class="mammal-box">ละมั่ง</p>
+                                <p class="mammal-box">เลียงผา</p>
+                                <p class="mammal-box">วาฬบรูด้า</p>
+                                <p class="mammal-box">วาฬโอมูระ</p>
+                                <p class="mammal-box">สมเสร็จ</p>
+                                <p class="mammal-box">สมัน</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div id="three">
+                        <h2 class="bird">สัตว์ป่าจำพวก<br>นก</h2>
+                        <p class="bird-box">นกกระเรียน</p>
+                        <p class="bird-box">นกเจ้าฟ้าหญิงสิรินธร</p>
+                        <p class="bird-box">นกแต้วแล้วท้องดำ</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div id="four">
+                        <h2 class="fish">สัตว์ป่าจำพวก<br>ปลา</h2>
+                        <p class="fish-box">ปลาฉลามวาฬ</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
