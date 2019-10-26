@@ -166,6 +166,10 @@ img {
     margin-left: auto;
 }
 
+button.name {
+    border-color: #B5D6B5;
+}
+
 .name-dot {
     font-family: 'Mitr', sans-serif;
     text-align: center;
@@ -177,6 +181,7 @@ img {
 
 .name:hover {
     background-color: #3e594a;
+    border-color: #3e594a;
     transition: 1s;
     cursor: pointer;
 }
@@ -216,6 +221,7 @@ img {
 
 .turtle {
     background-color: #92E28B;
+    border-color: #92E28B;
     width: 60%;
     height: 10%;
     text-align: center;
@@ -229,6 +235,7 @@ img {
 
 .mammal-box {
     background-color: #FFE4B5;
+    border-color: #FFE4B5;
     width: 90%;
     height: 10%;
     text-align: center;
@@ -242,6 +249,7 @@ img {
 
 .bird-box {
     background-color: #B2E2FF;
+    border-color: #B2E2FF;
     width: 60%;
     height: 10%;
     text-align: center;
@@ -255,6 +263,7 @@ img {
 
 .fish-box {
     background-color: #95BAFC;
+    border-color: #95BAFC;
     width: 60%;
     height: 10%;
     text-align: center;
@@ -271,24 +280,28 @@ img {
 
 .turtle:hover {
     background-color: #66ffa3;
+    border-color: #66ffa3;
     transition: 1s;
     cursor: pointer;
 }
 
 .mammal-box:hover {
     background-color: rgb(255, 208, 56);
+    border-color: rgb(255, 208, 56);
     transition: 1s;
     cursor: pointer;
 }
 
 .bird-box:hover {
     background-color: rgb(95, 191, 251);
+    border-color: rgb(95, 191, 251);
     transition: 1s;
     cursor: pointer;
 }
 
 .fish-box:hover {
     background-color: rgb(75, 141, 255);
+    border-color: rgb(75, 141, 255);
     transition: 1s;
     cursor: pointer;
 }
@@ -297,14 +310,6 @@ img {
     content: "";
     display: table;
     clear: both;
-}
-
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px;
-    box-sizing: border-box;
 }
 
 @media screen and (min-width: 1540px) {
