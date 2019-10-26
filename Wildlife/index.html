@@ -17,71 +17,136 @@
 <body>
 
     <section id="title">
-        <div class="position">
+        <div class="container-fluid position">
             <h1 class="topic">
                 <span class="text1">W I L D</span>
                 </br>
                 <span class="text2">L I F E</span>
             </h1>
 
+            <!-- แก้ button -->
             <div id="box">
-                <div class="start">
-                    <h2 class="start-dot"><a href="#history" class="hyperlink-start">จุดเริ่มต้น</a></h2>
-                </div>
+                <a href="#history" class="hyperlink-start">
+                    <button type="button" class="start start-dot">จุดเริ่มต้น</button>
+                </a>
             </div>
     </section>
 
 
     <section id="history">
-        <div class="main">
+        <div class="container-fluid main">
             <h2 class="animal">สัตว์ป่าสงวน</h2>
             <h1 class="line">_____________________________________________________</h1>
-            <p class="data-his">เป็นสัตว์หายาก, ใกล้จะสูญพันธุ์ หรืออาจจะสูญพันธุ์ไปแล้ว จึงจำเป็นต้องมีบทบัญญัติเข้มงวดกวดขัน เพื่อป้องกันไม่ให้เกิดอันตรายแก่สัตว์ป่าที่ยังมีชีวิตอยู่หรือซากสัตว์ป่า ซึ่งอาจจะตกไปอยู่ยังต่างประเทศด้วยการซื้อขาย ต่อมาเมื่อสถานการณ์ของสัตว์ป่าในประเทศไทยเปลี่ยนแปลงไป
-                สัตว์ป่าหลายชนิดมีแนวโน้มถูกคุกคามเสี่ยงต่อการสูญพันธุ์มากยิ่งขึ้น ประกอบกับเพื่อให้เกิดความสอดคล้องกับความร่วมมือระหว่างประเทศในการควบคุมดูแลการค้าหรือการลักลอบค้าสัตว์ป่าในรูปแบบต่างๆ
+            <p class="data-his">เป็นสัตว์หายาก, ใกล้จะสูญพันธุ์ หรืออาจจะสูญพันธุ์ไปแล้ว
+                จึงจำเป็นต้องมีบทบัญญัติเข้มงวดกวดขัน
+                เพื่อป้องกันไม่ให้เกิดอันตรายแก่สัตว์ป่าที่ยังมีชีวิตอยู่หรือซากสัตว์ป่า
+                ซึ่งอาจจะตกไปอยู่ยังต่างประเทศด้วยการซื้อขาย
+                ต่อมาเมื่อสถานการณ์ของสัตว์ป่าในประเทศไทยเปลี่ยนแปลงไป
+                สัตว์ป่าหลายชนิดมีแนวโน้มถูกคุกคามเสี่ยงต่อการสูญพันธุ์มากยิ่งขึ้น
+                ประกอบกับเพื่อให้เกิดความสอดคล้องกับความร่วมมือระหว่างประเทศในการควบคุมดูแลการค้าหรือการลักลอบค้าสัตว์ป่าในรูปแบบต่างๆ
             </p>
-        </div>
 
-        <div id="box-name">
-            <div class="name">
-                <h2 class="name-dot"><a href="#name" class="hyperlink-name">สัตว์ป่าสงวนมีทั้งสิ้น 19 ชนิด</a></h2>
+            <!-- แก้ button -->
+            <div id="box-name">
+                <a href="#name" class="hyperlink-name">
+                    <button type="button" class="name name-dot">สัตว์ป่าสงวนมีทั้งสิ้น 19 ชนิด</button>
+                </a>
             </div>
         </div>
     </section>
 
     <section id="name">
-        <div id="list">
+        <div id="container-fluid list">
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div id="one">
                         <h2 class="reptile">สัตว์ป่าจำพวก<br>สัตว์เลื้อยคลาน</h2>
                         <a href="turtle.html" target="_blank">
-                            <p class="turtle">เต่ามะเฟือง</p>
+                            <button type="button" class="turtle">
+                                <p>เต่ามะเฟือง</p>
+                            </button>
                         </a>
-
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div id="two">
                         <h2 class="mammal">สัตว์ป่าจำพวก<br>สัตว์เลี้ยงลูกด้วยนม</h2>
                         <div class="row">
-                            <div class="column">
-                                <p class="mammal-box">กระซู่</p>
-                                <p class="mammal-box">กวางผาจีน</p>
-                                <p class="mammal-box">กูปรี</p>
-                                <p class="mammal-box">เก้งหม้อ</p>
-                                <p class="mammal-box">ควายป่า</p>
-                                <p class="mammal-box">พะยูน</p>
-                                <p class="mammal-box">แมวลายหินอ่อน</p>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                                <!-- ใส่link ใน href ได้เลย -->
+                                <a href="">
+                                    <button type="button" class="mammal-box">
+                                        <p>กระซู่</p>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button type="button" class="mammal-box">
+                                        <p>กวางผาจีน</p>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button type="button" class="mammal-box">
+                                        <p>กูปรี</p>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button type="button" class="mammal-box">
+                                        <p>เก้งหม้อ</p>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button type="button" class="mammal-box">
+                                        <p>ควายป่า</p>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button type="button" class="mammal-box">
+                                        <p>พะยูน</p>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button type="button" class="mammal-box">
+                                        <p>แมวลายหินอ่อน</p>
+                                    </button>
+                                </a>
                             </div>
                             <!-- new column-->
-                            <div class="column">
-                                <p class="mammal-box">แรดชวา</p>
-                                <p class="mammal-box">ละมั่ง</p>
-                                <p class="mammal-box">เลียงผา</p>
-                                <p class="mammal-box">วาฬบรูด้า</p>
-                                <p class="mammal-box">วาฬโอมูระ</p>
-                                <p class="mammal-box">สมเสร็จ</p>
-                                <p class="mammal-box">สมัน</p>
+                            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                                <a href="">
+                                    <button type="button" class="mammal-box">
+                                        <p>แรดชวา</p>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button type="button" class="mammal-box">
+                                        <p>ละมั่ง</p>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button type="button" class="mammal-box">
+                                        <p>เลียงผา</p>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button type="button" class="mammal-box">
+                                        <p>วาฬบรูด้า</p>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button type="button" class="mammal-box">
+                                        <p>วาฬโอมูระ</p>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button type="button" class="mammal-box">
+                                        <p>สมเสร็จ</p>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button type="button" class="mammal-box">
+                                        <p>สมัน</p>
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -89,15 +154,35 @@
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div id="three">
                         <h2 class="bird">สัตว์ป่าจำพวก<br>นก</h2>
-                        <p class="bird-box">นกกระเรียน</p>
-                        <p class="bird-box">นกเจ้าฟ้าหญิงสิรินธร</p>
-                        <p class="bird-box">นกแต้วแล้วท้องดำ</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <a href="">
+                                    <button type="button" class="bird-box">
+                                        <p>นกกระเรียน</p>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button type="button" class="bird-box">
+                                        <p>นกเจ้าฟ้าหญิงสิรินธร</p>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button type="button" class="bird-box">
+                                        <p>นกแต้วแล้วท้องดำ</p>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div id="four">
                         <h2 class="fish">สัตว์ป่าจำพวก<br>ปลา</h2>
-                        <p class="fish-box">ปลาฉลามวาฬ</p>
+                        <a href="">
+                            <button type="button" class="fish-box">
+                                <p>ปลาฉลามวาฬ</p>
+                            </button>
+                        </a>
                     </div>
                 </div>
 
