@@ -8,13 +8,35 @@
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mitr&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <title>Wildlife</title>
 </head>
 
 <body>
+
+    <!-- nav bar -->
+    <div class="topnav" id="myTopnav">
+        <a href="#home">หน้าแรก</a>
+        <a href="#history">เกี่ยวกับ</a>
+        <div class="dropdown">
+            <button class="dropbtn">สัตว์
+            </button>
+            <div class="dropdown-content">
+                <a class="dropdown-item" href="#">สัตว์ป่าจำพวกสัตว์เลื้อยคลาน</a>
+                <a class="dropdown-item" href="#">สัตว์ป่าจำพวกสัตว์เลี้ยงลูกด้วยนม</a>
+                <a class="dropdown-item" href="#">สัตว์ป่าจำพวกนก</a>
+                <a class="dropdown-item" href="#">สัตว์ป่าจำพวกปลา</a>
+            </div>
+        </div>
+        <a href="#">แบบทดสอบ</a>
+        <a href="#contact">ติดต่อ</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <!-- end nav bar -->
 
     <section id="title">
         <div class="container-fluid position">
@@ -177,6 +199,16 @@
             </div>
         </div>
     </section>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>
