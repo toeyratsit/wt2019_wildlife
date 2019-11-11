@@ -1,5 +1,9 @@
 /* nav bar */
 
+script {
+    z-index: 1;
+}
+
 .topnav {
     background-color: #333;
     position: fixed;
@@ -197,7 +201,7 @@ body {
         padding-top: 5vh;
         padding-bottom: 2vh;
     }
-    *{
+    * {
         font-size: 3vw;
     }
 }
