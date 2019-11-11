@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Anton|Athiti&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../navstyle.css">
     <title>Sumatran rhinoceros</title>
 </head>
 <style>
@@ -18,11 +19,11 @@
         font-family: 'Anton', sans-serif;
         font-family: 'Athiti', sans-serif;
     }
-
+    
     .head {
         padding: 15px;
     }
-
+    
     .box {
         background-color: #fff;
         border: 3px solid #5a3f05;
@@ -33,34 +34,34 @@
         margin-top: 20px;
         margin-right: 20px;
     }
-
+    
     .status {
         padding: 25px 15px 10px;
         margin-bottom: 20px;
         margin-right: 20px;
     }
-
+    
     * {
         font-size: 2vmin;
     }
-
+    
     .img {
         width: 75%;
         height: auto;
     }
-
+    
     .nn {
         width: 30%;
         height: auto;
         margin-bottom: 10%;
     }
-
+    
     .boxsex {
         height: 85%;
         padding-top: 15vh;
         padding-bottom: 10vh;
     }
-
+    
     @media (max-width: 767px) {
         .boxsex {
             padding-top: 5vh;
@@ -70,7 +71,36 @@
 </style>
 
 <body>
+    <!-- nav bar -->
+    <div class="topnav" id="myTopnav">
+        <a href="../../Wildlife/index.html">หน้าแรก</a>
+        <a href="#history ">เกี่ยวกับ</a>
+        <a href="# ">สัตว์เลื้อยคลาน</a>
+        <div class="dropdown ">
+            <button class="dropbtn ">สัตว์เลี้ยงลูกด้วยนม
+                        </button>
+            <div class="dropdown-content ">
+                <a class="dropdown-item " href="กระซู่.html">กระซู่</a>
+                <a class="dropdown-item " href="กวางผา.html">กวางผา</a>
+                <a class="dropdown-item " href="กูปรี.html">กูปรี</a>
+                <a class="dropdown-item " href="ควายป่า.html">ควายป่า</a>
+                <a class="dropdown-item " href="แมวลายหินอ่อน.html">แมวลายหินอ่อน</a>
+                <a class="dropdown-item " href="แรดชวา.html">แรดชวา</a>
+                <a class="dropdown-item " href="ละมั่ง.html">ละมั่ง</a>
+                <a class="dropdown-item " href="เลียงผา.html">เลียงผา</a>
+                <a class="dropdown-item " href="สมเสร็จ.html">สมเสร็จ</a>
+                <a class="dropdown-item " href="สมัน.html">สมัน</a>
+            </div>
+        </div>
+        <a href="# ">สัตว์ปีก</a>
+        <a href="# ">ปลา</a>
+        <a href="# ">แบบทดสอบ</a>
+        <a href="#contact ">ติดต่อ</a>
+        <a href="javascript:void(0); " class="icon " onclick="myFunction() ">&#9776;</a>
+    </div>
+    <!-- end nav bar -->
     <div class="container-fluid">
+        <br><br><br>
         <div class="row">
             <div class="head col-12 text-center">
                 <h1>กระซู่</h1>
@@ -84,16 +114,14 @@
                     <h4>การสืบพันธุ์</h4>
                     <br>
                     <p>
-                        กระซู่ตัวเมียสืบพันธุ์ได้เมื่ออายุ 4 ปีขึ้นไป
-                        ส่วนตัวผู้สืบพันธุ์ได้เมื่อเข้าสู่ปีที่ 7 ตัวเมียจะตั้งท้องประมาณ 14-17 เดือน
-                        คลอดลูกครั้งละ 1 ตัว หลังจากนั้นจะทิ้งช่วงประมาณ 4 ปี จึงจะตั้งท้องอีก
+                        กระซู่ตัวเมียสืบพันธุ์ได้เมื่ออายุ 4 ปีขึ้นไป ส่วนตัวผู้สืบพันธุ์ได้เมื่อเข้าสู่ปีที่ 7 ตัวเมียจะตั้งท้องประมาณ 14-17 เดือน คลอดลูกครั้งละ 1 ตัว หลังจากนั้นจะทิ้งช่วงประมาณ 4 ปี จึงจะตั้งท้องอีก
                     </p>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-12 order-1">
                 <div class="col-12 text-center">
-                    <img src="/img/กระซู่.png" width="300px" class="img">
+                    <img src="../img/กระซู่.png" width="300px" class="img">
                 </div>
 
                 <div class="status col-12 text-center">
@@ -115,8 +143,7 @@
                     <h4>ที่อยู่อาศัย</h4>
                     <br>
                     <p>
-                        อาศัยอยู่ได้ทั้งพื้นราบและที่สูงในป่าดิบชื้น ป่าพรุ และป่าเมฆ
-                        ในบริเวณที่เต็มไปด้วยเนินสูงชันใกล้กับแหล่งน้ำโดยเฉพาะหุบลำธารสูงชันที่เต็มไปด้วยพุ่มไม้
+                        อาศัยอยู่ได้ทั้งพื้นราบและที่สูงในป่าดิบชื้น ป่าพรุ และป่าเมฆ ในบริเวณที่เต็มไปด้วยเนินสูงชันใกล้กับแหล่งน้ำโดยเฉพาะหุบลำธารสูงชันที่เต็มไปด้วยพุ่มไม้
                     </p>
                 </div>
             </div>
@@ -128,9 +155,7 @@
                     <h4>ลักษณะ</h4>
                     <br>
                     <p>
-                        กระซู่เป็นแรดที่มีขนาดเล็กที่สุดในโลก มีลักษณะเด่นคือมี นอ 2 นอ เหมือนแรดแอฟริกา
-                        โดยนอจะไม่ตั้งยาวขึ้นมาเหมือนแรดชวา นอหน้าใหญ่กว่านอหลัง
-                        โดยทั่วไปยาว 15-25 ซม. ลำตัวมีขนหยาบและยาวปกคลุม
+                        กระซู่เป็นแรดที่มีขนาดเล็กที่สุดในโลก มีลักษณะเด่นคือมี นอ 2 นอ เหมือนแรดแอฟริกา โดยนอจะไม่ตั้งยาวขึ้นมาเหมือนแรดชวา นอหน้าใหญ่กว่านอหลัง โดยทั่วไปยาว 15-25 ซม. ลำตัวมีขนหยาบและยาวปกคลุม
                     </p>
                 </div>
             </div>
@@ -138,13 +163,13 @@
             <div class="col-lg-4 col-md-4 col-sm-12 order-md-2 order-sm-3 order-3">
                 <div class="row justify-content-around">
                     <div class="box col-lg-4 col-md-4 col-sm-5 col-5 text-center">
-                        <img src="/img/weight.png" width="50px" class="nn">
+                        <img src="../img/weight.png" width="50px" class="nn">
                         <p>น้ำหนัก</p>
                         <p>500 - 800 กก.</p>
                     </div>
 
                     <div class="box col-lg-5 col-md-5 col-sm-5 col-5 text-center">
-                        <img src="/img/ruler.png" width="50px" class="nn">
+                        <img src="../img/ruler.png" width="50px" class="nn">
                         <p>ความสูงเมื่อโตเต็มที่</p>
                         <p>1.2 - 1.45 ม.</p>
                     </div>
@@ -156,9 +181,7 @@
                     <h4>พฤติกรรม</h4>
                     <br>
                     <p>
-                        เป็นสัตว์หากินตัวเดียว (ยกเว้นช่วงฤดูสืบพันธุ์) กระซู่ตัวเมียมีพื้นที่ครอบครองอย่างชัดเจน
-                        ส่วนตัวผู้ไม่มีอาณาเขตแน่นอนอาศัยอยู่ได้ในป่าดวงดิบ หรือที่รายที่มีแหล่งน้ำลำธาร
-                        ชอบแช่ปลักโคลน
+                        เป็นสัตว์หากินตัวเดียว (ยกเว้นช่วงฤดูสืบพันธุ์) กระซู่ตัวเมียมีพื้นที่ครอบครองอย่างชัดเจน ส่วนตัวผู้ไม่มีอาณาเขตแน่นอนอาศัยอยู่ได้ในป่าดวงดิบ หรือที่รายที่มีแหล่งน้ำลำธาร ชอบแช่ปลักโคลน
                     </p>
                 </div>
             </div>
@@ -166,6 +189,16 @@
     </div>
     </div>
     </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>
