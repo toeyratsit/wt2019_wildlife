@@ -10,7 +10,7 @@ body {
     text-align: center;
     height: 107%;
     width: 100%;
-    background-image: url(/pic/bg_color.png);
+    background-image: url(pic/bg_color.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
