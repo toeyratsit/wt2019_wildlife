@@ -86,6 +86,8 @@
     .topnav.responsive {
         position: fixed;
         display: block;
+        max-height: 50vh;
+        overflow: scroll;
     }
     .topnav.responsive .icon {
         position: absolute;
