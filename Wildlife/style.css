@@ -8,7 +8,7 @@ body {
 
 #title {
     text-align: center;
-    height: 107%;
+    height: 120%;
     width: 100%;
     background-image: url(pic/bg_color.png);
     background-size: cover;
@@ -34,7 +34,7 @@ body {
 .box-white {
     font-family: 'Athiti', sans-serif;
     width: 60vw;
-    height: 50vh;
+    height: 60vh;
     background-color: #F5F4ED;
     margin: auto;
     display: block;
@@ -65,15 +65,12 @@ body {
 
 /* 19 ตัว */
 
-.box-nineteen {
-    background-color: #3E594A;
-}
-
 .nineteen {
     background-color: #B3CBA7;
     width: 22vw;
     height: 9vh;
     box-shadow: 5px 5px #F5F4ED;
+    margin: 55vh 0vh 0vh 0vh;
 }
 
 .text-nineteen {
@@ -100,7 +97,7 @@ body {
     height: 9vh;
     background-color: #F5F4ED;
     box-shadow: 5px 5px #89A688;
-    margin: 15vh 0vw 0vh 0vw;
+    margin: 20vh 0vw 0vh 0vw;
     /* position: absolute; */
 }
 
@@ -119,21 +116,70 @@ body {
     font-family: 'Athiti', sans-serif;
     font-size: 28px;
     font-weight: 600;
-    padding: 9vh 0vw;
+    margin: auto;
+    display: block;
 }
 
 
 /* reptile */
 
-.reptile,
-.milk,
-.bird,
-.fish {
-    background-color: #D5EABB;
-    border: 3px solid #3A7338;
+.reptile {
+    background-color: #F5F4ED;
+    border: 5px solid #3A7338;
     width: 15vw;
     height: 30vh;
     margin: 15vh 0vw 0vh;
+}
+
+.milk {
+    background-color: #F5F4ED;
+    border: 5px solid #EC8F6A;
+    width: 15vw;
+    height: 30vh;
+    margin: 15vh 0vw 0vh;
+}
+
+.bird {
+    background-color: #F5F4ED;
+    border: 5px solid #E688A1;
+    width: 15vw;
+    height: 30vh;
+    margin: 15vh 0vw 0vh;
+}
+
+.fish {
+    background-color: #F5F4ED;
+    border: 5px solid #7A9AC6;
+    width: 15vw;
+    height: 30vh;
+    margin: 15vh 0vw 0vh;
+}
+
+.icon-turtle {
+    width: 80px;
+    margin: auto;
+    display: block;
+    padding: 20px 0px 10px 0px;
+}
+
+.icon-cat {
+    width: 70px;
+    margin: auto;
+    display: block;
+    padding: 20px 0px 20px 0px;
+}
+
+.icon-dove {
+    width: 70px;
+    margin: auto;
+    display: block;
+    padding: 25px 0px 25px 0px;
+}
+
+.icon-shark {
+    width: 120px;
+    margin: auto;
+    display: block;
 }
 
 
@@ -147,8 +193,6 @@ body {
 }
 
 .box-test {
-    margin: auto;
-    display: block;
     width: 80vw;
     height: 75vh;
     background-color: #F5F4ED;
@@ -238,3 +282,17 @@ body {
 .figma {
     margin: 20px 0px 0px 0px;
 }
+
+
+/* 
+@media screen and (min-width: 2264) {
+    .wildlife col-md-12.h1 {
+        font-size: 40vw;
+    }
+    .box-white-text {
+        font-weight: 600;
+        text-align: center;
+        padding: 5vh 0vw;
+        font-size: 50vw;
+    }
+} */
