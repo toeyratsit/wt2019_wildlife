@@ -181,7 +181,7 @@ const textNodes = [{
                 nextText: 8
             },
             {
-                text: 'วาฬเพชรฆาต',
+                text: 'ปลาฉลามวาฬ',
                 nextText: 17
             }
         ]
