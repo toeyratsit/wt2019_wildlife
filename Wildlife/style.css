@@ -122,6 +122,13 @@ body {
 
 
 /* reptile */
+.text-animal {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
 
 .reptile {
     background-color: #F5F4ED;
@@ -130,6 +137,7 @@ body {
     height: 30vh;
     margin: 15vh 0vw 0vh;
 }
+
 
 .milk {
     background-color: #F5F4ED;
