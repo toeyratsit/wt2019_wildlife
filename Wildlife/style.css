@@ -283,16 +283,956 @@ body {
     margin: 20px 0px 0px 0px;
 }
 
-
-/* 
-@media screen and (min-width: 2264) {
-    .wildlife col-md-12.h1 {
-        font-size: 40vw;
+@media screen and (min-width: 1920px) {
+    #title {
+        text-align: center;
+        height: 115%;
+        width: 100%;
+        background-image: url(pic/bg_color.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .wildlife-text {
+        text-align: center;
+        font-size: 10vw;
+    }
+    .box-white {
+        font-family: 'Athiti', sans-serif;
+        width: 60vw;
+        height: 75vh;
+        background-color: #F5F4ED;
+        margin: auto;
+        display: block;
+        position: absolute;
+        margin: 0vh 20vw 0vh 20vw;
     }
     .box-white-text {
         font-weight: 600;
         text-align: center;
         padding: 5vh 0vw;
-        font-size: 50vw;
+        font-size: 5vw;
     }
-} */
+    .para-first {
+        text-align: justify;
+        font-size: 40px;
+        text-indent: 40px;
+        font-weight: 500;
+    }
+    .nineteen {
+        background-color: #B3CBA7;
+        width: 22vw;
+        height: 9vh;
+        box-shadow: 5px 5px #F5F4ED;
+        margin: 70vh 0vh 0vh 0vh;
+    }
+    .text-nineteen {
+        font-family: 'Athiti', sans-serif;
+        text-align: center;
+        font-size: 45px;
+        font-weight: 500;
+        padding: 2vh 0vw 2vh 0vw;
+    }
+    #animal-box {
+        margin: -1px;
+        background-image: linear-gradient(#3E594A, #89A688, #B3CBA7, #F5F9CE);
+        width: 100%;
+        height: 130%;
+    }
+    .fourteen {
+        font-family: 'Athiti', sans-serif;
+        width: 20vw;
+        height: 9vh;
+        background-color: #F5F4ED;
+        box-shadow: 5px 5px #89A688;
+        margin: 20vh 0vw 0vh 0vw;
+        /* position: absolute; */
+    }
+    .text-fourteen {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        padding: 2vh 0vw 2vh 0vw;
+    }
+    /* main-animal */
+    .main {
+        text-align: center;
+        font-family: 'Athiti', sans-serif;
+        font-size: 45px;
+        font-weight: 600;
+        margin: auto;
+        display: block;
+    }
+    /* reptile */
+    .reptile {
+        background-color: #F5F4ED;
+        border: 5px solid #3A7338;
+        width: 15vw;
+        height: 30vh;
+        margin: 15vh 0vw 0vh;
+    }
+    .milk {
+        background-color: #F5F4ED;
+        border: 5px solid #EC8F6A;
+        width: 15vw;
+        height: 30vh;
+        margin: 15vh 0vw 0vh;
+    }
+    .bird {
+        background-color: #F5F4ED;
+        border: 5px solid #E688A1;
+        width: 15vw;
+        height: 30vh;
+        margin: 15vh 0vw 0vh;
+    }
+    .fish {
+        background-color: #F5F4ED;
+        border: 5px solid #7A9AC6;
+        width: 15vw;
+        height: 30vh;
+        margin: 15vh 0vw 0vh;
+    }
+    .icon-turtle {
+        width: 100px;
+        margin: auto;
+        display: block;
+        padding: 40px 0px 40px 0px;
+    }
+    .icon-cat {
+        width: 90px;
+        margin: auto;
+        display: block;
+        padding: 50px 0px 40px 0px;
+    }
+    .icon-dove {
+        width: 100px;
+        margin: auto;
+        display: block;
+        padding: 35px 0px 35px 0px;
+    }
+    .icon-shark {
+        width: 150px;
+        margin: auto;
+        display: block;
+        padding: 10px 0px 10px 0px;
+    }
+    #test {
+        margin: 0;
+        background-image: linear-gradient(#F5F9CE, #FDFED0, #FFEBB9);
+        width: 100%;
+        height: 80%;
+    }
+    .box-test {
+        width: 80vw;
+        height: 75vh;
+        background-color: #F5F4ED;
+        border: 3px solid #3A7338;
+    }
+    .memory {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 10px;
+        font-size: 80px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .test-text {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 30px;
+        font-size: 100px;
+        text-align: center;
+        padding-left: 15px;
+    }
+    .card {
+        margin: auto;
+        display: block;
+        width: 350px;
+        height: 450px;
+        margin-top: 40px;
+        background-image: linear-gradient(#FFE5D8, #FFCAD5, #F3ABB6);
+    }
+    .circle {
+        margin: 50px 75px;
+        background-color: white;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    #contact {
+        margin: 0;
+        background-image: linear-gradient(#FFEBB9, #F9E4AF, #E7CC87, #A9986B, #75694A);
+        width: 100%;
+        height: 105%;
+    }
+    .contact-text {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 10px;
+        font-size: 90px;
+        text-align: center;
+        padding-left: 15px;
+        margin: 50px 0px 90px 0px;
+    }
+    .dell,
+    .tik,
+    .faii,
+    .toey,
+    .peng {
+        width: 200px;
+        border-radius: 50%;
+        margin: auto;
+        display: block;
+    }
+    .name-dell,
+    .name-tik,
+    .name-faii,
+    .name-toey,
+    .name-peng {
+        font-family: 'Athiti', sans-serif;
+        text-align: center;
+        font-size: 30px;
+        margin: 20px 0px 20px 0px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    #title {
+        text-align: center;
+        height: 115%;
+        width: 100%;
+        background-image: url(pic/bg_color.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .wildlife-text {
+        text-align: center;
+        font-size: 10vw;
+    }
+    .box-white {
+        font-family: 'Athiti', sans-serif;
+        width: 60vw;
+        height: 75vh;
+        background-color: #F5F4ED;
+        margin: auto;
+        display: block;
+        position: absolute;
+        margin: 0vh 20vw 0vh 20vw;
+    }
+    .box-white-text {
+        font-weight: 600;
+        text-align: center;
+        padding: 5vh 0vw;
+        font-size: 4vw;
+    }
+    .para-first {
+        text-align: justify;
+        font-size: 35px;
+        text-indent: 40px;
+        font-weight: 500;
+    }
+    .nineteen {
+        background-color: #B3CBA7;
+        width: 22vw;
+        height: 9vh;
+        box-shadow: 5px 5px #F5F4ED;
+        margin: 70vh 0vh 0vh 0vh;
+    }
+    .text-nineteen {
+        font-family: 'Athiti', sans-serif;
+        text-align: center;
+        font-size: 45px;
+        font-weight: 500;
+        padding: 2vh 0vw 2vh 0vw;
+    }
+    #animal-box {
+        margin: -1px;
+        background-image: linear-gradient(#3E594A, #89A688, #B3CBA7, #F5F9CE);
+        width: 100%;
+        height: 130%;
+    }
+    .fourteen {
+        font-family: 'Athiti', sans-serif;
+        width: 20vw;
+        height: 9vh;
+        background-color: #F5F4ED;
+        box-shadow: 5px 5px #89A688;
+        margin: 20vh 0vw 0vh 0vw;
+        /* position: absolute; */
+    }
+    .text-fourteen {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        padding: 2vh 0vw 2vh 0vw;
+    }
+    /* main-animal */
+    .main {
+        text-align: center;
+        font-family: 'Athiti', sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin: auto;
+        display: block;
+    }
+    /* reptile */
+    .reptile {
+        background-color: #F5F4ED;
+        border: 5px solid #3A7338;
+        width: 15vw;
+        height: 30vh;
+        margin: 15vh 0vw 0vh;
+    }
+    .milk {
+        background-color: #F5F4ED;
+        border: 5px solid #EC8F6A;
+        width: 15vw;
+        height: 30vh;
+        margin: 15vh 0vw 0vh;
+    }
+    .bird {
+        background-color: #F5F4ED;
+        border: 5px solid #E688A1;
+        width: 15vw;
+        height: 30vh;
+        margin: 15vh 0vw 0vh;
+    }
+    .fish {
+        background-color: #F5F4ED;
+        border: 5px solid #7A9AC6;
+        width: 15vw;
+        height: 30vh;
+        margin: 15vh 0vw 0vh;
+    }
+    .icon-turtle {
+        width: 90px;
+        margin: auto;
+        display: block;
+        padding: 30px 0px 30px 0px;
+    }
+    .icon-cat {
+        width: 80px;
+        margin: auto;
+        display: block;
+        padding: 40px 0px 30px 0px;
+    }
+    .icon-dove {
+        width: 90px;
+        margin: auto;
+        display: block;
+        padding: 35px 0px 35px 0px;
+    }
+    .icon-shark {
+        width: 140px;
+        margin: auto;
+        display: block;
+        padding: 10px 0px 10px 0px;
+    }
+    #test {
+        margin: 0;
+        background-image: linear-gradient(#F5F9CE, #FDFED0, #FFEBB9);
+        width: 100%;
+        height: 90%;
+    }
+    .box-test {
+        width: 80vw;
+        height: 85vh;
+        background-color: #F5F4ED;
+        border: 3px solid #3A7338;
+    }
+    .memory {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 10px;
+        font-size: 80px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .test-text {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 30px;
+        font-size: 100px;
+        text-align: center;
+        padding-left: 15px;
+    }
+    .card {
+        margin: auto;
+        display: block;
+        width: 300px;
+        height: 400px;
+        margin-top: 40px;
+        background-image: linear-gradient(#FFE5D8, #FFCAD5, #F3ABB6);
+    }
+    .circle {
+        margin: 50px 50px;
+        background-color: white;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    #contact {
+        margin: 0;
+        background-image: linear-gradient(#FFEBB9, #F9E4AF, #E7CC87, #A9986B, #75694A);
+        width: 100%;
+        height: 125%;
+    }
+    .contact-text {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 10px;
+        font-size: 90px;
+        text-align: center;
+        padding-left: 15px;
+        margin: 50px 0px 90px 0px;
+    }
+    .dell,
+    .tik,
+    .faii,
+    .toey,
+    .peng {
+        width: 200px;
+        border-radius: 50%;
+        margin: auto;
+        display: block;
+    }
+    .name-dell,
+    .name-tik,
+    .name-faii,
+    .name-toey,
+    .name-peng {
+        font-family: 'Athiti', sans-serif;
+        text-align: center;
+        font-size: 30px;
+        margin: 20px 0px 20px 0px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    #title {
+        text-align: center;
+        height: 125%;
+        width: 100%;
+        background-image: url(pic/bg_color.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .wildlife-text {
+        text-align: center;
+        font-size: 10vw;
+    }
+    .box-white {
+        font-family: 'Athiti', sans-serif;
+        width: 60vw;
+        height: 75vh;
+        background-color: #F5F4ED;
+        margin: auto;
+        display: block;
+        position: absolute;
+        margin: 0vh 20vw 0vh 20vw;
+    }
+    .box-white-text {
+        font-weight: 600;
+        text-align: center;
+        padding: 5vh 0vw;
+        font-size: 4vw;
+    }
+    .para-first {
+        text-align: justify;
+        font-size: 30px;
+        text-indent: 40px;
+        font-weight: 500;
+    }
+    .nineteen {
+        background-color: #B3CBA7;
+        width: 22vw;
+        height: 9vh;
+        box-shadow: 5px 5px #F5F4ED;
+        margin: 70vh 0vh 0vh 0vh;
+    }
+    .text-nineteen {
+        font-family: 'Athiti', sans-serif;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 500;
+        padding: 2vh 0vw 2vh 0vw;
+    }
+    #animal-box {
+        margin: -1px;
+        background-image: linear-gradient(#3E594A, #89A688, #B3CBA7, #F5F9CE);
+        width: 100%;
+        height: 130%;
+    }
+    .fourteen {
+        font-family: 'Athiti', sans-serif;
+        width: 20vw;
+        height: 9vh;
+        background-color: #F5F4ED;
+        box-shadow: 5px 5px #89A688;
+        margin: 20vh 0vw 0vh 0vw;
+        /* position: absolute; */
+    }
+    .text-fourteen {
+        text-align: center;
+        font-size: 35px;
+        font-weight: 600;
+        padding: 2vh 0vw 2vh 0vw;
+    }
+    /* main-animal */
+    .main {
+        text-align: center;
+        font-family: 'Athiti', sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin: auto;
+        display: block;
+    }
+    /* reptile */
+    .reptile {
+        background-color: #F5F4ED;
+        border: 5px solid #3A7338;
+        width: 15vw;
+        height: 30vh;
+        margin: 15vh 0vw 0vh;
+    }
+    .milk {
+        background-color: #F5F4ED;
+        border: 5px solid #EC8F6A;
+        width: 15vw;
+        height: 30vh;
+        margin: 15vh 0vw 0vh;
+    }
+    .bird {
+        background-color: #F5F4ED;
+        border: 5px solid #E688A1;
+        width: 15vw;
+        height: 30vh;
+        margin: 15vh 0vw 0vh;
+    }
+    .fish {
+        background-color: #F5F4ED;
+        border: 5px solid #7A9AC6;
+        width: 15vw;
+        height: 30vh;
+        margin: 15vh 0vw 0vh;
+    }
+    .icon-turtle {
+        width: 90px;
+        margin: auto;
+        display: block;
+        padding: 20px 0px 20px 0px;
+    }
+    .icon-cat {
+        width: 80px;
+        margin: auto;
+        display: block;
+        padding: 30px 0px 20px 0px;
+    }
+    .icon-dove {
+        width: 90px;
+        margin: auto;
+        display: block;
+        padding: 20px 0px 20px 0px;
+    }
+    .icon-shark {
+        width: 130px;
+        margin: auto;
+        display: block;
+        padding: 0px 0px 0px 0px;
+    }
+    #test {
+        margin: 0;
+        background-image: linear-gradient(#F5F9CE, #FDFED0, #FFEBB9);
+        width: 100%;
+        height: 100%;
+    }
+    .box-test {
+        width: 80vw;
+        height: 95vh;
+        background-color: #F5F4ED;
+        border: 3px solid #3A7338;
+    }
+    .memory {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 10px;
+        font-size: 65px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .test-text {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 30px;
+        font-size: 90px;
+        text-align: center;
+        padding-left: 15px;
+    }
+    .card {
+        margin: auto;
+        display: block;
+        width: 300px;
+        height: 400px;
+        margin-top: 40px;
+        background-image: linear-gradient(#FFE5D8, #FFCAD5, #F3ABB6);
+    }
+    .circle {
+        margin: 50px 50px;
+        background-color: white;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    #contact {
+        margin: 0;
+        background-image: linear-gradient(#FFEBB9, #F9E4AF, #E7CC87, #A9986B, #75694A);
+        width: 100%;
+        height: 140%;
+    }
+    .contact-text {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 10px;
+        font-size: 90px;
+        text-align: center;
+        padding-left: 15px;
+        margin: 50px 0px 90px 0px;
+    }
+    .dell,
+    .tik,
+    .faii,
+    .toey,
+    .peng {
+        width: 200px;
+        border-radius: 50%;
+        margin: auto;
+        display: block;
+    }
+    .name-dell,
+    .name-tik,
+    .name-faii,
+    .name-toey,
+    .name-peng {
+        font-family: 'Athiti', sans-serif;
+        text-align: center;
+        font-size: 30px;
+        margin: 20px 0px 20px 0px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #title {
+        text-align: center;
+        height: 130%;
+        width: 100%;
+        background-image: url(pic/bg_color.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .box-white {
+        font-family: 'Athiti', sans-serif;
+        width: 60vw;
+        height: 75vh;
+        background-color: #F5F4ED;
+        margin: auto;
+        display: block;
+        position: absolute;
+        margin: 0vh 20vw 0vh 20vw;
+    }
+    .box-white-text {
+        font-weight: 600;
+        text-align: center;
+        padding: 5vh 0vw;
+        font-size: 4vw;
+    }
+    .para-first {
+        text-align: justify;
+        font-size: 30px;
+        text-indent: 40px;
+        font-weight: 500;
+    }
+    .nineteen {
+        background-color: #B3CBA7;
+        width: 22vw;
+        height: 9vh;
+        box-shadow: 5px 5px #F5F4ED;
+        margin: 70vh 0vh 0vh 0vh;
+    }
+    .text-nineteen {
+        font-family: 'Athiti', sans-serif;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 500;
+        padding: 2vh 0vw 2vh 0vw;
+    }
+    #animal-box {
+        margin: -1px;
+        background-image: linear-gradient(#3E594A, #89A688, #B3CBA7, #F5F9CE);
+        width: 100%;
+        height: 130%;
+    }
+    .fourteen {
+        font-family: 'Athiti', sans-serif;
+        width: 20vw;
+        height: 9vh;
+        background-color: #F5F4ED;
+        box-shadow: 5px 5px #89A688;
+        margin: 20vh 0vw 0vh 0vw;
+        /* position: absolute; */
+    }
+    .text-fourteen {
+        text-align: center;
+        font-size: 35px;
+        font-weight: 600;
+        padding: 2vh 0vw 2vh 0vw;
+    }
+    /* main-animal */
+    .main {
+        text-align: center;
+        font-family: 'Athiti', sans-serif;
+        font-size: 35px;
+        font-weight: 600;
+        margin: auto;
+        display: block;
+    }
+    .icon-turtle {
+        width: 90px;
+        margin: auto;
+        display: block;
+        padding: 20px 0px 20px 0px;
+    }
+    .icon-cat {
+        width: 80px;
+        margin: auto;
+        display: block;
+        padding: 30px 0px 20px 0px;
+    }
+    .icon-dove {
+        width: 90px;
+        margin: auto;
+        display: block;
+        padding: 20px 0px 20px 0px;
+    }
+    .icon-shark {
+        width: 130px;
+        margin: auto;
+        display: block;
+        padding: 0px 0px 0px 0px;
+    }
+    #test {
+        margin: 0;
+        background-image: linear-gradient(#F5F9CE, #FDFED0, #FFEBB9);
+        width: 100%;
+        height: 100%;
+    }
+    .box-test {
+        width: 80vw;
+        height: 95vh;
+        background-color: #F5F4ED;
+        border: 3px solid #3A7338;
+    }
+    .memory {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 10px;
+        font-size: 70px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .test-text {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 30px;
+        font-size: 85px;
+        text-align: center;
+        padding-left: 15px;
+    }
+    .card {
+        margin: auto;
+        display: block;
+        width: 270px;
+        height: 370px;
+        margin-top: 40px;
+        background-image: linear-gradient(#FFE5D8, #FFCAD5, #F3ABB6);
+    }
+    .circle {
+        margin: 50px 60px;
+        background-color: white;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    #contact {
+        margin: 0;
+        background-image: linear-gradient(#FFEBB9, #F9E4AF, #E7CC87, #A9986B, #75694A);
+        width: 100%;
+        height: 140%;
+    }
+    .contact-text {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 10px;
+        font-size: 90px;
+        text-align: center;
+        padding-left: 15px;
+        margin: 50px 0px 90px 0px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #title {
+        text-align: center;
+        height: 130%;
+        width: 100%;
+        background-image: url(pic/bg_color.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .box-white {
+        font-family: 'Athiti', sans-serif;
+        width: 60vw;
+        height: 75vh;
+        background-color: #F5F4ED;
+        margin: auto;
+        display: block;
+        position: absolute;
+        margin: 0vh 20vw 0vh 20vw;
+    }
+    .box-white-text {
+        font-weight: 600;
+        text-align: center;
+        padding: 5vh 0vw;
+        font-size: 4vw;
+    }
+    .para-first {
+        text-align: justify;
+        font-size: 25px;
+        text-indent: 40px;
+        font-weight: 500;
+    }
+    .nineteen {
+        background-color: #B3CBA7;
+        width: 22vw;
+        height: 9vh;
+        box-shadow: 5px 5px #F5F4ED;
+        margin: 70vh 0vh 0vh 0vh;
+    }
+    .text-nineteen {
+        font-family: 'Athiti', sans-serif;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        padding: 2vh 0vw 2vh 0vw;
+    }
+    #animal-box {
+        margin: -1px;
+        background-image: linear-gradient(#3E594A, #89A688, #B3CBA7, #F5F9CE);
+        width: 100%;
+        height: 130%;
+    }
+    .fourteen {
+        font-family: 'Athiti', sans-serif;
+        width: 20vw;
+        height: 9vh;
+        background-color: #F5F4ED;
+        box-shadow: 5px 5px #89A688;
+        margin: 20vh 0vw 0vh 0vw;
+        /* position: absolute; */
+    }
+    .text-fourteen {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        padding: 2vh 0vw 2vh 0vw;
+    }
+    /* main-animal */
+    .main {
+        text-align: center;
+        font-family: 'Athiti', sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        margin: auto;
+        display: block;
+    }
+    .icon-turtle {
+        width: 70px;
+        margin: auto;
+        display: block;
+        padding: 20px 0px 20px 0px;
+    }
+    .icon-cat {
+        width: 60px;
+        margin: auto;
+        display: block;
+        padding: 30px 0px 20px 0px;
+    }
+    .icon-dove {
+        width: 70px;
+        margin: auto;
+        display: block;
+        padding: 20px 0px 20px 0px;
+    }
+    .icon-shark {
+        width: 110px;
+        margin: auto;
+        display: block;
+        padding: 0px 0px 0px 0px;
+    }
+    #test {
+        margin: 0;
+        background-image: linear-gradient(#F5F9CE, #FDFED0, #FFEBB9);
+        width: 100%;
+        height: 110%;
+    }
+    .box-test {
+        width: 80vw;
+        height: 100vh;
+        background-color: #F5F4ED;
+        border: 3px solid #3A7338;
+    }
+    .memory {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 10px;
+        font-size: 60px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .test-text {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 30px;
+        font-size: 70px;
+        text-align: center;
+        padding-left: 15px;
+    }
+    .card {
+        margin: auto;
+        display: block;
+        width: 230px;
+        height: 330px;
+        margin-top: 40px;
+        background-image: linear-gradient(#FFE5D8, #FFCAD5, #F3ABB6);
+    }
+    .circle {
+        margin: 50px 50px;
+        background-color: white;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+    }
+    #contact {
+        margin: 0;
+        background-image: linear-gradient(#FFEBB9, #F9E4AF, #E7CC87, #A9986B, #75694A);
+        width: 100%;
+        height: 180%;
+    }
+    .contact-text {
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 10px;
+        font-size: 70px;
+        text-align: center;
+        padding-left: 15px;
+        margin: 50px 0px 90px 0px;
+    }
+    .name-dell,
+    .name-tik,
+    .name-faii,
+    .name-toey,
+    .name-peng {
+        font-family: 'Athiti', sans-serif;
+        text-align: center;
+        font-size: 25px;
+        margin: 20px 0px 20px 0px;
+    }
+}
