@@ -1,331 +1,257 @@
-const textElement = document.getElementById('text')
-const optionButtonsElement = document.getElementById('option-buttons')
+const StartButton = document.getElementById('start')
+const nextButton = document.getElementById('next')
+const Question = document.getElementById('question-container')
+const QuestionElement = document.getElementById('question')
+const ansButtonElement = document.getElementById('answer')
+StartButton.addEventListener('click', Start)
+nextButton.addEventListener('click', () => {
+    CurrentQuestion++
+    NextQuestion()
+})
+let RandomQuestion, CurrentQuestion
 
-let state = {}
-
-
-function startGame() {
-    state = {}
-    showText(1)
-
+function Start() {
+    console.log('started')
+    StartButton.classList.add('hide')
+    RandomQuestion = questionList.sort(() => Math.random() - .5)
+    CurrentQuestion = 0
+    Question.classList.remove('hide')
+    NextQuestion()
 }
 
-function showText(textNodeIndex) {
-    const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
-    textElement.innerText = textNode.text
-    while (optionButtonsElement.firstChild) {
-        optionButtonsElement.removeChild(optionButtonsElement.firstChild)
-    }
 
-    textNode.options.forEach(option => {
-        if (showOption(option)) {
-            const button = document.createElement('button')
-            button.innerText = option.text
-            button.classList.add('btn')
-            button.addEventListener('click', () => Option(option))
-            optionButtonsElement.appendChild(button)
+function NextQuestion() {
+    resetState()
+    showQuestion(RandomQuestion[CurrentQuestion])
+}
+
+function showQuestion(questionList) {
+    QuestionElement.innerText = questionList.question
+    questionList.answers.forEach(answer => {
+        const button = document.createElement('button')
+        button.innerText = answer.text
+        button.classList.add('btn')
+        if (answer.correct) {
+            button.dataset.correct = answer.correct
         }
+        button.addEventListener('click', Answer)
+        ansButtonElement.appendChild(button)
     })
 }
 
-function showOption(option) {
-    return option.requiredState == null || option.requiredState(state)
-}
-
-function Option(option) {
-    const nextTextNodeId = option.nextText
-    if (nextTextNodeId <= 0) {
-        return startGame()
+function resetState() {
+    nextButton.classList.add('hide')
+    while (ansButtonElement.firstChild) {
+        ansButtonElement.removeChild(ansButtonElement.firstChild)
     }
-    state = Object.assign(state, option.setState)
-    showText(nextTextNodeId)
 }
 
-const textNodes = [{
-        id: 1,
-        text: 'กูปรีเป็นสัตว์ป่าจำพวกใด ?',
-        options: [{
-                text: 'จำพวกสัตว์น้ำ',
-                nextText: 12,
+function Answer(e) {
+    const selectedButton = e.target
+    const correct = selectedButton.dataset.correct
+    setStatusClass(document.body, correct)
+    Array.from(ansButtonElement.children).forEach(button => {
+        setStatusClass(button, button.dataset.correct)
+    })
+    if (RandomQuestion.length > CurrentQuestion + 1) {
+        nextButton.classList.remove('hide')
+    } else {
+        Swal.fire({
+            title: 'สุดยอดไปเลย !',
+            icon: 'success',
+            // imageUrl: 'confetti-right.png',
+            // imageWidth: 200,
+            // imageHeight: 200,
+            // imageAlt: 'Custom image',
+            // text: 'Do you want to continue',
+            // icon: 'error',
+            confirmButtonText: 'OK'
+        })
+        StartButton.innerText = 'เล่นใหม่อีกครั้ง'
+        StartButton.classList.remove('hide')
+    }
 
+}
+
+
+
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add('correct')
+    } else {
+        element.classList.add('wrong')
+    }
+}
+
+function clearStatusClass(element) {
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
+}
+
+const questionList = [{
+        question: 'กูปรีเป็นสัตว์ป่าจำพวกใด ?',
+        answers: [{
+                text: 'จำพวกสัตว์น้ำ',
+                correct: false
             },
             {
                 text: 'จำพวกสัตว์ปีก',
-                nextText: 12
-            }, {
+                correct: false
+            },
+            {
                 text: 'จำพวกสัตว์เลี้ยงลูกด้วยนม',
-                nextText: 2,
+                correct: true,
             },
             {
                 text: 'จำพวกสัตว์เลื้อยคลาน',
-                nextText: 12
+                correct: false
             }
+
         ]
     },
     {
-        id: 2,
-        text: 'สัตว์ป่าจำพวกสัตว์เลี้ยงลูกด้วยนมตัวใด มีความเสี่ยงที่จะสูญพันธ์ุมากที่สุด ?',
-        options: [{
+        question: 'สัตว์ป่าจำพวกสัตว์เลี้ยงลูกด้วยนมตัวใด มีความเสี่ยงที่จะสูญพันธ์ุมากที่สุด ?',
+        answers: [{
                 text: 'กระซู่',
-                nextText: 3
+                correct: true
             },
             {
                 text: 'กวางผา',
-                nextText: 21
+                correct: false
             },
             {
                 text: 'ควายป่า',
-                nextText: 21
+                correct: false,
             },
             {
                 text: 'สมัน',
-                nextText: 21
+                correct: false
             }
+
         ]
     },
     {
-        id: 3,
-        text: 'สัตว์ป่าในประเทศไทยข้อใดที่ได้มีการสูญพันธุ์ไปแล้ว ?',
-        options: [{
-                text: 'กวางผา',
-                nextText: 13
-            },
-            {
-                text: 'สมัน',
-                nextText: 4
-            },
-            {
-                text: 'นกเจ้าฟ้าหญิงสิรินธร',
-                nextText: 4
-            },
-            {
-                text: 'วาฬบรูด้า',
-                nextText: 13
-            }
-        ]
-    },
-    {
-        id: 4,
-        text: 'ข้อใดกล่าวถูกต้อง ?',
-        options: [{
-                text: 'นกกะเรียนมีการเกี้ยวพาราสีด้วยการบินขึ้นไปบนที่สูง',
-                nextText: 14
-            }, {
-                text: 'ละมั่งเป็นสัตว์ที่คล้ายกับแพะและแกะ',
-                nextText: 14
-            }, {
-                text: 'พะยูนโดยทั่วไปจะอาศัยอยู่ในบริเวณน้ำลึก',
-                nextText: 14
-            },
-            {
-                text: 'เต่ามะเฟืองเป็นเต่าทะเลที่มีขนาดใหญ่ที่สุด',
-                nextText: 5
-            }
-        ]
-    },
-    {
-        id: 5,
-        text: 'อาหารของสัตว์ในข้อใดแตกต่างจากพวก ?',
-        options: [{
-                text: 'แมวลายหินอ่อน',
-                nextText: 6
-            },
-            {
-                text: 'กูปรี',
-                nextText: 15
-            },
-            {
-                text: 'เก้งหม้อ',
-                nextText: 15
-            },
-            {
-                text: 'ละมั่ง',
-                nextText: 15
-            }
-        ]
-    },
-    {
-        id: 6,
-        text: 'สัตว์ป่าในข้อใดมีระยะเวลาการตั้งท้องเป็นเวลา 9 เดือน ?',
-        options: [{
-                text: 'สมเสร็จ',
-                nextText: 16
-            },
-            {
-                text: 'ควายป่า',
-                nextText: 16
-            },
-            {
-                text: 'กูปรี',
-                nextText: 7
-            },
-            {
-                text: 'วาฬบรูด้า',
-                nextText: 16
-            },
-        ]
-    },
-    {
-        id: 7,
-        text: 'สัตว์ป่าในข้อใดที่ล่าสุดถูกบรรจุเพิ่มเข้ามาในรายชื่อสัตว์ป่าสงวน ?',
-        options: [{
-                text: 'ละมั่ง',
-                nextText: 17
-            },
-            {
-                text: 'กวางผา',
-                nextText: 17
-            },
-            {
-                text: 'เต่ามะเฟือง',
-                nextText: 8
-            },
-            {
-                text: 'ปลาฉลามวาฬ',
-                nextText: 17
-            }
-        ]
-    },
-    {
-        id: 8,
-        text: 'ปลาฉลามวาฬ มีครีบอกและครีบหางอย่างละกี่อัน ?',
-        options: [{
+        question: 'สัตว์ป่าในประเทศไทยข้อใดที่ได้มีการสูญพันธุ์ไปแล้ว ?',
+        answers: [{
+            text: 'กวางผา',
+            correct: false
+        }, {
+            text: 'พะยูน',
+            correct: false
+        }, {
+            text: 'นกเจ้าฟ้าหญิงสิรินธร',
+            correct: true
+        }, {
+            text: 'วาฬบรูด้า',
+            correct: false
+        }]
+
+    }, {
+        question: 'ข้อใดกล่าวถูกต้อง ?',
+        answers: [{
+            text: 'นกกะเรียนมีการเกี้ยวพาราสีด้วยการบินขึ้นไปบนที่สูง',
+            correct: false
+        }, {
+            text: 'นกกะเรียนมีการเกี้ยวพาราสีด้วยการบินขึ้นไปบนที่สูง',
+            correct: false
+        }, {
+            text: 'พะยูนโดยทั่วไปจะอาศัยอยู่ในบริเวณน้ำลึก',
+            correct: false
+        }, {
+            text: 'เต่ามะเฟืองเป็นเต่าทะเลที่มีขนาดใหญ่ที่สุด',
+            correct: true
+        }]
+    }, {
+        question: 'อาหารของสัตว์ในข้อใดแตกต่างจากพวก ?',
+        answers: [{
+            text: 'แมวลายหินอ่อน',
+            correct: true
+        }, {
+            text: 'กูปรี',
+            correct: false
+        }, {
+            text: 'เก้งหม้อ',
+            correct: false
+        }, {
+            text: 'ละมั่ง',
+            correct: false
+        }]
+    }, {
+        question: 'สัตว์ป่าในข้อใดมีระยะเวลาการตั้งท้องเป็นเวลา 9 เดือน ?',
+        answers: [{
+            text: 'สมเสร็จ',
+            correct: false
+        }, {
+            text: 'ควายป่า',
+            correct: false
+        }, {
+            text: 'กูปรี',
+            correct: true
+        }, {
+            text: 'วาฬบรูด้า',
+            correct: false
+        }]
+    }, {
+        question: 'สัตว์ป่าในข้อใดที่ล่าสุดถูกบรรจุเพิ่มเข้ามาในรายชื่อสัตว์ป่าสงวน ?',
+        answers: [{
+            text: 'ละมั่ง',
+            correct: false
+        }, {
+            text: 'กวางผา',
+            correct: false
+        }, {
+            text: 'เต่ามะเฟือง',
+            correct: true
+        }, {
+            text: 'แรดชวา',
+            correct: false
+        }]
+    }, {
+        question: 'ปลาฉลามวาฬ มีครีบอกและครีบหางอย่างละกี่อัน ?',
+        answers: [{
             text: 'ครีบอก 1 อัน และครีบหาง 1 อัน',
-            nextText: 18
+            correct: false
         }, {
             text: 'ครีบอก 2 อัน และครีบหาง 1 อัน',
-            nextText: 18
+            correct: false
         }, {
             text: 'ครีบอก 1 อัน และครีบหาง 2 อัน',
-            nextText: 18
+            correct: false
         }, {
             text: 'ครีบอก 2 อัน และครีบหาง 2 อัน',
-            nextText: 9
-        }]
-    },
-    {
-        id: 9,
-        text: 'สัตว์ป่าในข้อใดแตกต่างจากพวก ?',
-        options: [{
-                text: 'วาฬบรูด้า',
-                nextText: 10
-            },
-            {
-                text: 'สมัน',
-                nextText: 19
-            },
-            {
-                text: 'กูปรี',
-                nextText: 19
-            },
-            {
-                text: 'นกกระเรียน',
-                nextText: 19
-            }
-        ]
-    },
-    {
-        id: 10,
-        text: 'พระราชบัญญัติสงวนและคุ้มครองสัตว์ป่าฉบับแรกตราขึ้นเมื่อปี พ.ศ. ใด ?',
-        options: [{
-                text: 'พ.ศ.2535',
-                nextText: 20
-            },
-            {
-                text: 'พ.ศ.2510',
-                nextText: 20
-            },
-            {
-                text: 'พ.ศ.2503',
-                nextText: 11
-            },
-            {
-                text: 'พ.ศ.2530',
-                nextText: 20
-            }
-        ]
-    },
-    {
-        id: 11,
-        text: 'ยินดีด้วยคุณได้ 10 คะแนน 🤩🎉🎊',
-        options: [{
-            text: 'เล่นใหม่อีกครั้ง',
-            nextText: -1
-        }]
-    },
-    //// score ////
-    {
-        id: 12,
-        text: 'ตอบผิด ไม่ได้คะแนน สู้ๆ ลองเล่นใหม่อีกครั้งนะ 🤝',
-        options: [{
-            text: 'เล่นใหม่อีกครั้ง',
-            nextText: -1
+            correct: true
         }]
     }, {
-        id: 13,
-        text: 'ตอบผิด ได้ 2 คะแนน สู้ๆ ลองเล่นใหม่อีกครั้งนะ 🤘',
-        options: [{
-            text: 'เล่นใหม่อีกครั้ง',
-            nextText: -1
+        question: 'สัตว์ป่าในข้อใดแตกต่างจากพวก ?',
+        answers: [{
+            text: 'วาฬบรูด้า',
+            correct: true
+        }, {
+            text: 'สมัน',
+            correct: false
+        }, {
+            text: 'กูปรี',
+            correct: false
+        }, {
+            text: 'นกกระเรียน',
+            correct: false
         }]
     }, {
-        id: 14,
-        text: 'ตอบผิด ได้ 3 คะแนน สู้ๆ ลองเล่นใหม่อีกครั้งนะ 🤟',
-        options: [{
-            text: 'เล่นใหม่อีกครั้ง',
-            nextText: -1
-        }]
-    }, {
-        id: 15,
-        text: 'ตอบผิด ได้ 4 คะแนน สู้ๆ ลองเล่นใหม่อีกครั้งนะ ✌✌',
-        options: [{
-            text: 'เล่นใหม่อีกครั้ง',
-            nextText: -1
-        }]
-    }, {
-        id: 16,
-        text: 'ตอบผิด ได้ 5 คะแนน 🖐',
-        options: [{
-            text: 'เล่นใหม่อีกครั้ง',
-            nextText: -1
-        }]
-    },
-    {
-        id: 17,
-        text: 'ตอบผิด ได้ 6 คะแนน 😉',
-        options: [{
-            text: 'เล่นใหม่อีกครั้ง',
-            nextText: -1
-        }]
-    }, {
-        id: 18,
-        text: 'ตอบผิด ได้ 7 คะแนน 😰',
-        options: [{
-            text: 'เล่นใหม่อีกครั้ง',
-            nextText: -1
-        }]
-    }, {
-        id: 19,
-        text: 'ตอบผิด ได้ 8 คะแนน 😰',
-        options: [{
-            text: 'เล่นใหม่อีกครั้ง',
-            nextText: -1
-        }]
-    }, {
-        id: 20,
-        text: 'ตอบผิด ได้ 9 คะแนน 😱',
-        options: [{
-            text: 'เล่นใหม่อีกครั้ง',
-            nextText: -1
-        }]
-    }, {
-        id: 21,
-        text: 'ตอบผิด ได้ 1 คะแนน สู้ๆ ลองเล่นใหม่อีกครั้งนะ 🤝',
-        options: [{
-            text: 'เล่นใหม่อีกครั้ง',
-            nextText: -1
+        question: 'พระราชบัญญัติสงวนและคุ้มครองสัตว์ป่าฉบับแรกตราขึ้นเมื่อปี พ.ศ. ใด ?',
+        answers: [{
+            text: 'พ.ศ.2535',
+            correct: false
+        }, {
+            text: 'พ.ศ.2510',
+            correct: false
+        }, {
+            text: 'พ.ศ.2503',
+            correct: true
+        }, {
+            text: 'พ.ศ.2530',
+            correct: false
         }]
     }
-]
 
-startGame()
+]
