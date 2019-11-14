@@ -13,7 +13,7 @@ let RandomQuestion, CurrentQuestion
 function Start() {
     console.log('started')
     StartButton.classList.add('hide')
-    RandomQuestion = questionList.sort(() => Math.random() - 1)
+    RandomQuestion = questionList.sort(() => Math.random() - .5)
     CurrentQuestion = 0
     Question.classList.remove('hide')
     NextQuestion()
@@ -56,11 +56,23 @@ function Answer(e) {
     if (RandomQuestion.length > CurrentQuestion + 1) {
         nextButton.classList.remove('hide')
     } else {
+        Swal.fire({
+            title: 'ยินดีด้วยคุณทำถูกหมดทุกข้อ !',
+            imageUrl: 'confetti-right.png',
+            imageWidth: 200,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+            // text: 'Do you want to continue',
+            // icon: 'error',
+            confirmButtonText: 'OK'
+        })
         StartButton.innerText = 'เล่นใหม่อีกครั้ง'
         StartButton.classList.remove('hide')
     }
 
 }
+
+
 
 function setStatusClass(element, correct) {
     clearStatusClass(element)
