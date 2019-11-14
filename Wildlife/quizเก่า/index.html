@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Athiti&display=swap" rel="stylesheet">
+    <link href="question-mark.png" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="../animals/navstyle.css">
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        
+        body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: #F0CDCD;
+            font-family: 'Anton', sans-serif;
+            font-family: 'Athiti', sans-serif;
+        }
+        
+        .container {
+            width: 800px;
+            max-width: 80%;
+            background-color: #FFEEE8;
+            padding: 200px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px 2px;
+        }
+        
+        .btn-grid {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .btn {
+            background-color: #6DDCEB;
+            transition: background-color .5s;
+            border: 1px solid #929292;
+            border-radius: 5px;
+            padding: 10px 10px;
+            color: black;
+            outline: none;
+        }
+        
+        .btn:hover {
+            border-color: black;
+            background-color: #6DCB65;
+        }
+        
+        #text {
+            font-size: 3vw;
+            margin-bottom: 10%;
+        }
+        
+        .topnav {
+            background-color: #676767;
+            color: white;
+        }
+        
+        .topnav a:hover {
+            background-color: #8C8B8B;
+        }
+    </style>
+    <title>QUIZ</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div class="topnav" id="myTopnav">
+        <a href="../index.html">หน้าแรก</a>
+        <a href="#history ">เกี่ยวกับ</a>
+        <a href="../animals/reptile/reptiles.html">สัตว์เลื้อยคลาน</a>
+        <a href="../animals/mammal/mammal.html">สัตว์เลี้ยงลูกด้วยนม</a>
+        <a href="../animals/bird/birds.html">สัตว์ปีก</a>
+        <a href="../animals/fish/fishes.html">ปลา</a>
+        <a href="index.html">แบบทดสอบ</a>
+        <a href="#contact ">ติดต่อ</a>
+        <a href="javascript:void(0); " class="icon " onclick="myFunction() ">&#9776;</a>
+    </div>
+    <!-- end nav bar -->
+    <div class="container">
+        <div id="text" class="text-center">Text</div>
+        <div id="option-buttons" class="btn-grid">
+            <button class="btn btn-primary text-center">Option 1</button>
+            <button class="btn btn-primary text-center">Option 2</button>
+            <button class="btn btn-primary text-center">Option 3</button>
+            <button class="btn btn-primary text-center">Option 4</button>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
