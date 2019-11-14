@@ -493,7 +493,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1800px) and (max-width: 1919px) {
     #title {
         text-align: center;
         height: 115%;
@@ -703,7 +703,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1700px) and (max-width: 1799px) {
     #title {
         text-align: center;
         height: 125%;
@@ -913,7 +913,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1600px) and (max-width: 1699px) {
     #title {
         text-align: center;
         height: 130%;
@@ -1070,7 +1070,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) and (max-width: 1599px) {
     #title {
         text-align: center;
         height: 130%;
