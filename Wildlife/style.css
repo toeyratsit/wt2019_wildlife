@@ -256,7 +256,7 @@ body {
 .faii,
 .toey,
 .peng {
-    width: 200px;
+    width: 17vw;
     border-radius: 50%;
     margin: auto;
     display: block;
@@ -275,13 +275,14 @@ body {
 
 .facebook,
 .github {
-    margin: 0px 0px 50px 0px;
+    margin: 0px 0px 30px 0px;
     width: 5vw;
 }
 
 .github-all,
 .figma {
-    margin: 20px 0px 0px 0px;
+    margin: 20px 20px 20px 20px;
+    width: 5vw;
 }
 
 @media screen and (min-width: 1920px) {
@@ -491,6 +492,17 @@ body {
         text-align: center;
         font-size: 30px;
         margin: 20px 0px 20px 0px;
+    }
+    .facebook,
+    .github {
+        margin: 0px 0px 30px 0px;
+        width: 3vw;
+    }
+
+    .github-all,
+    .figma {
+        margin: 20px 20px 20px 20px;
+        width: 3vw;
     }
 }
 
@@ -702,6 +714,17 @@ body {
         font-size: 30px;
         margin: 20px 0px 20px 0px;
     }
+    .facebook,
+    .github {
+        margin: 0px 0px 30px 0px;
+        width: 4vw;
+    }
+
+    .github-all,
+    .figma {
+        margin: 20px 20px 20px 20px;
+        width: 4vw;
+    }
 }
 
 @media screen and (min-width: 1700px) and (max-width: 1799px) {
@@ -912,6 +935,17 @@ body {
         font-size: 30px;
         margin: 20px 0px 20px 0px;
     }
+    .facebook,
+    .github {
+        margin: 0px 0px 30px 0px;
+        width: 4vw;
+    }
+
+    .github-all,
+    .figma {
+        margin: 20px 20px 20px 20px;
+        width: 4vw;
+    }
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1699px) {
@@ -1068,6 +1102,27 @@ body {
         text-align: center;
         padding-left: 15px;
         margin: 50px 0px 90px 0px;
+    }
+    .name-dell,
+    .name-tik,
+    .name-faii,
+    .name-toey,
+    .name-peng {
+        font-family: 'Athiti', sans-serif;
+        text-align: center;
+        font-size: 27px;
+        margin: 20px 0px 20px 0px;
+    }
+    .facebook,
+    .github {
+        margin: 0px 0px 30px 0px;
+        width: 4vw;
+    }
+
+    .github-all,
+    .figma {
+        margin: 20px 20px 20px 20px;
+        width: 4vw;
     }
 }
 
@@ -1243,6 +1298,20 @@ body {
         font-family: 'Athiti', sans-serif;
         text-align: center;
         font-size: 18px;
+    }
+    .dell,
+    .tik,
+    .faii,
+    .toey,
+    .peng {
+        width: 20vw;
+    }
+    .name-dell,
+    .name-tik,
+    .name-faii,
+    .name-toey,
+    .name-peng {
+        font-size: 3vw;
     }
 }
 
