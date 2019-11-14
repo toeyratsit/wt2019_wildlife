@@ -1301,11 +1301,16 @@ body {
     }
 }
 
-@media screen and (max-width: 634px) {
+@media screen and (max-width: 660px) {
     .box-white-text, .paragraph1, .text-nineteen, .text-fourteen{
         font-family: 'Athiti', sans-serif;
         text-align: center;
         font-size: 18px;
+    }
+    .para-first{
+        font-family: 'Athiti', sans-serif;
+        text-align: center;
+        font-size: 16px;
     }
     .dell,
     .tik,
