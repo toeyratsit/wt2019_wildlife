@@ -58,10 +58,11 @@ function Answer(e) {
     } else {
         Swal.fire({
             title: 'ยินดีด้วยคุณทำถูกหมดทุกข้อ !',
-            imageUrl: 'confetti-right.png',
-            imageWidth: 200,
-            imageHeight: 200,
-            imageAlt: 'Custom image',
+            icon: 'success',
+            // imageUrl: 'confetti-right.png',
+            // imageWidth: 200,
+            // imageHeight: 200,
+            // imageAlt: 'Custom image',
             // text: 'Do you want to continue',
             // icon: 'error',
             confirmButtonText: 'OK'
