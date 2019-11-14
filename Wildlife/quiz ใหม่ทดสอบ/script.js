@@ -56,17 +56,18 @@ function Answer(e) {
     if (RandomQuestion.length > CurrentQuestion + 1) {
         nextButton.classList.remove('hide')
     } else {
-        Swal.fire({
-            title: 'ยินดีด้วยคุณทำถูกหมดทุกข้อ !',
-            icon: 'success',
-            // imageUrl: 'confetti-right.png',
-            // imageWidth: 200,
-            // imageHeight: 200,
-            // imageAlt: 'Custom image',
-            // text: 'Do you want to continue',
-            // icon: 'error',
-            confirmButtonText: 'OK'
-        })
+        // Swal.fire({
+        //     title: 'ยินดีด้วยคุณทำถูกหมดทุกข้อ !',
+        //     icon: 'success',
+        //     // imageUrl: 'confetti-right.png',
+        //     // imageWidth: 200,
+        //     // imageHeight: 200,
+        //     // imageAlt: 'Custom image',
+        //     // text: 'Do you want to continue',
+        //     // icon: 'error',
+        //     confirmButtonText: 'OK'
+        // })
+
         StartButton.innerText = 'เล่นใหม่อีกครั้ง'
         StartButton.classList.remove('hide')
     }
