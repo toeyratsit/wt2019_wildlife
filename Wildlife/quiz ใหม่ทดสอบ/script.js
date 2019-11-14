@@ -56,18 +56,18 @@ function Answer(e) {
     if (RandomQuestion.length > CurrentQuestion + 1) {
         nextButton.classList.remove('hide')
     } else {
-        // Swal.fire({
-        //     title: 'ยินดีด้วยคุณทำถูกหมดทุกข้อ !',
-        //     icon: 'success',
-        //     // imageUrl: 'confetti-right.png',
-        //     // imageWidth: 200,
-        //     // imageHeight: 200,
-        //     // imageAlt: 'Custom image',
-        //     // text: 'Do you want to continue',
-        //     // icon: 'error',
-        //     confirmButtonText: 'OK'
-        // })
-        StartButton.innerText = 'ทำแบบทดสอบครบแล้ว เล่นใหม่อีกครั้ง'
+        Swal.fire({
+            title: 'สุดยอดไปเลย !',
+            icon: 'success',
+            // imageUrl: 'confetti-right.png',
+            // imageWidth: 200,
+            // imageHeight: 200,
+            // imageAlt: 'Custom image',
+            // text: 'Do you want to continue',
+            // icon: 'error',
+            confirmButtonText: 'OK'
+        })
+        StartButton.innerText = 'เล่นใหม่อีกครั้ง'
         StartButton.classList.remove('hide')
     }
 
@@ -90,7 +90,7 @@ function clearStatusClass(element) {
 }
 
 const questionList = [{
-        question: 'กูปรีเป็นสัตว์จำพวกใด ?',
+        question: 'กูปรีเป็นสัตว์ป่าจำพวกใด ?',
         answers: [{
                 text: 'จำพวกสัตว์น้ำ',
                 correct: false
@@ -137,8 +137,8 @@ const questionList = [{
             text: 'กวางผา',
             correct: false
         }, {
-            text: 'สมัน',
-            correct: true
+            text: 'พะยูน',
+            correct: false
         }, {
             text: 'นกเจ้าฟ้าหญิงสิรินธร',
             correct: true
@@ -204,8 +204,8 @@ const questionList = [{
             text: 'เต่ามะเฟือง',
             correct: true
         }, {
-            text: 'ปลาฉลามวาฬ',
-            correct: true
+            text: 'แรดชวา',
+            correct: false
         }]
     }, {
         question: 'ปลาฉลามวาฬ มีครีบอกและครีบหางอย่างละกี่อัน ?',
