@@ -50,7 +50,7 @@ body.wrong {
 
 .btn {
     border: 1px solid black;
-    background-color: rgb(122, 228, 255);
+    background-color: rgb(219, 195, 143);
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
@@ -59,7 +59,7 @@ body.wrong {
 
 .btn:hover {
     border-color: black;
-    background-color: rgb(151, 222, 255);
+    background-color: rgb(255, 229, 219);
 }
 
 .btn.correct {

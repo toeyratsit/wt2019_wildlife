@@ -67,7 +67,6 @@ function Answer(e) {
         //     // icon: 'error',
         //     confirmButtonText: 'OK'
         // })
-
         StartButton.innerText = 'เล่นใหม่อีกครั้ง'
         StartButton.classList.remove('hide')
     }
