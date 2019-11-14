@@ -1301,17 +1301,23 @@ body {
     }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 767px) {
     .box-white-text, .paragraph1, .text-nineteen, .text-fourteen{
         font-family: 'Athiti', sans-serif;
         text-align: center;
         font-size: 18px;
     }
+
     .para-first{
         font-family: 'Athiti', sans-serif;
         text-align: center;
         font-size: 16px;
     }
+
+    .main {
+        font-size: 19px;
+    }
+
     .dell,
     .tik,
     .faii,
@@ -1319,6 +1325,7 @@ body {
     .peng {
         width: 20vw;
     }
+
     .name-dell,
     .name-tik,
     .name-faii,
