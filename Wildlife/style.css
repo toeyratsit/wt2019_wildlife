@@ -122,6 +122,7 @@ body {
 
 
 /* reptile */
+
 .text-animal {
     width: 100%;
     text-align: center;
@@ -137,7 +138,6 @@ body {
     height: 31vh;
     margin: 15vh 0vw 0vh;
 }
-
 
 .milk {
     background-color: #F5F4ED;
@@ -161,6 +161,26 @@ body {
     width: 15vw;
     height: 31vh;
     margin: 15vh 0vw 0vh;
+}
+
+.reptile:hover {
+    box-shadow: 3px 3px 20px #3A7338;
+    opacity: 90%;
+}
+
+.milk:hover {
+    box-shadow: 3px 3px 20px #EC8F6A;
+    opacity: 90%;
+}
+
+.bird:hover {
+    box-shadow: 3px 3px 20px #E688A1;
+    opacity: 90%;
+}
+
+.fish:hover {
+    box-shadow: 3px 3px 20px #7A9AC6;
+    opacity: 90%;
 }
 
 .icon-turtle {
@@ -232,6 +252,10 @@ body {
     background-image: linear-gradient(#FFE5D8, #FFCAD5, #F3ABB6);
 }
 
+.card:hover {
+    box-shadow: 3px 3px 20px grey;
+}
+
 .circle {
     margin: 25px 25px;
     background-color: white;
@@ -285,6 +309,16 @@ body {
 .github {
     margin: 0px 0px 30px 0px;
     width: 5vw;
+}
+
+.dell:hover,
+.tik:hover,
+.faii:hover,
+.toey:hover,
+.peng:hover,
+.facebook:hover,
+.github:hover {
+    opacity: 80%;
 }
 
 .github-all,
@@ -506,7 +540,6 @@ body {
         margin: 0px 0px 30px 0px;
         width: 3vw;
     }
-
     .github-all,
     .figma {
         margin: 20px 20px 20px 20px;
@@ -727,7 +760,6 @@ body {
         margin: 0px 0px 30px 0px;
         width: 4vw;
     }
-
     .github-all,
     .figma {
         margin: 20px 20px 20px 20px;
@@ -948,7 +980,6 @@ body {
         margin: 0px 0px 30px 0px;
         width: 4vw;
     }
-
     .github-all,
     .figma {
         margin: 20px 20px 20px 20px;
@@ -1126,7 +1157,6 @@ body {
         margin: 0px 0px 30px 0px;
         width: 4vw;
     }
-
     .github-all,
     .figma {
         margin: 20px 20px 20px 20px;
@@ -1305,16 +1335,12 @@ body {
     .main {
         font-size: 22px;
     }
-
     .icon-turtle {
         width: 7vw;
     }
-    
-    .icon-cat
-    .icon-dove {
+    .icon-cat .icon-dove {
         width: 8vw;
     }
-    
     .icon-shark {
         width: 12vw;
     }
@@ -1329,30 +1355,23 @@ body {
         text-align: center;
         font-size: 18px;
     }
-
     .para-first {
         font-family: 'Athiti', sans-serif;
         text-align: center;
         font-size: 16px;
     }
-
     .main {
         font-size: 3vw;
     }
-
     .icon-turtle {
         width: 9vw;
     }
-    
-    .icon-cat
-    .icon-dove {
+    .icon-cat .icon-dove {
         width: 10vw;
     }
-    
     .icon-shark {
         width: 13vw;
     }
-
     .dell,
     .tik,
     .faii,
@@ -1360,7 +1379,6 @@ body {
     .peng {
         width: 20vw;
     }
-
     .name-dell,
     .name-tik,
     .name-faii,
@@ -1379,17 +1397,14 @@ body {
         text-align: center;
         font-size: 18px;
     }
-
     .para-first {
         font-family: 'Athiti', sans-serif;
         text-align: center;
         font-size: 16px;
     }
-
     .main {
         font-size: 3.5vw;
     }
-
     .name-dell,
     .name-tik,
     .name-faii,
@@ -1400,20 +1415,22 @@ body {
 }
 
 @media screen and (max-width: 360px) {
-    .box-white-text, .paragraph1, .text-nineteen, .text-fourteen{
+    .box-white-text,
+    .paragraph1,
+    .text-nineteen,
+    .text-fourteen {
         font-family: 'Athiti', sans-serif;
         text-align: center;
         font-size: 16px;
     }
-    .para-first{
+    .para-first {
         font-family: 'Athiti', sans-serif;
         text-align: center;
         font-size: 14px;
     }
-    .main{
+    .main {
         font-family: 'Athiti', sans-serif;
         text-align: center;
         font-size: 16px;
     }
 }
-
