@@ -29,7 +29,7 @@ body {
 }
 
 
-/* ิbox-white */
+/* box-white */
 
 .box-white {
     font-family: 'Athiti', sans-serif;
@@ -116,13 +116,12 @@ body {
     font-family: 'Athiti', sans-serif;
     font-size: 28px;
     font-weight: 600;
-    margin: auto;
+    margin: 0 auto 5px auto;
     display: block;
 }
 
 
 /* reptile */
-
 .text-animal {
     width: 100%;
     text-align: center;
@@ -135,15 +134,16 @@ body {
     background-color: #F5F4ED;
     border: 5px solid #3A7338;
     width: 15vw;
-    height: 30vh;
+    height: 31vh;
     margin: 15vh 0vw 0vh;
 }
+
 
 .milk {
     background-color: #F5F4ED;
     border: 5px solid #EC8F6A;
     width: 15vw;
-    height: 30vh;
+    height: 31vh;
     margin: 15vh 0vw 0vh;
 }
 
@@ -151,7 +151,7 @@ body {
     background-color: #F5F4ED;
     border: 5px solid #E688A1;
     width: 15vw;
-    height: 30vh;
+    height: 31vh;
     margin: 15vh 0vw 0vh;
 }
 
@@ -159,33 +159,33 @@ body {
     background-color: #F5F4ED;
     border: 5px solid #7A9AC6;
     width: 15vw;
-    height: 30vh;
+    height: 31vh;
     margin: 15vh 0vw 0vh;
 }
 
 .icon-turtle {
-    width: 80px;
+    width: 8vw;
     margin: auto;
     display: block;
     padding: 20px 0px 10px 0px;
 }
 
 .icon-cat {
-    width: 70px;
+    width: 7vw;
     margin: auto;
     display: block;
     padding: 20px 0px 20px 0px;
 }
 
 .icon-dove {
-    width: 70px;
+    width: 7vw;
     margin: auto;
     display: block;
     padding: 25px 0px 25px 0px;
 }
 
 .icon-shark {
-    width: 120px;
+    width: 12vw;
     margin: auto;
     display: block;
 }
@@ -506,6 +506,7 @@ body {
         margin: 0px 0px 30px 0px;
         width: 3vw;
     }
+
     .github-all,
     .figma {
         margin: 20px 20px 20px 20px;
@@ -726,6 +727,7 @@ body {
         margin: 0px 0px 30px 0px;
         width: 4vw;
     }
+
     .github-all,
     .figma {
         margin: 20px 20px 20px 20px;
@@ -946,6 +948,7 @@ body {
         margin: 0px 0px 30px 0px;
         width: 4vw;
     }
+
     .github-all,
     .figma {
         margin: 20px 20px 20px 20px;
@@ -1123,6 +1126,7 @@ body {
         margin: 0px 0px 30px 0px;
         width: 4vw;
     }
+
     .github-all,
     .figma {
         margin: 20px 20px 20px 20px;
@@ -1297,6 +1301,25 @@ body {
     }
 }
 
+@media screen and (max-width: 990px) {
+    .main {
+        font-size: 22px;
+    }
+
+    .icon-turtle {
+        width: 7vw;
+    }
+    
+    .icon-cat
+    .icon-dove {
+        width: 8vw;
+    }
+    
+    .icon-shark {
+        width: 12vw;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .box-white-text,
     .paragraph1,
@@ -1306,14 +1329,30 @@ body {
         text-align: center;
         font-size: 18px;
     }
+
     .para-first {
         font-family: 'Athiti', sans-serif;
         text-align: center;
         font-size: 16px;
     }
+
     .main {
-        font-size: 19px;
+        font-size: 3vw;
     }
+
+    .icon-turtle {
+        width: 9vw;
+    }
+    
+    .icon-cat
+    .icon-dove {
+        width: 10vw;
+    }
+    
+    .icon-shark {
+        width: 13vw;
+    }
+
     .dell,
     .tik,
     .faii,
@@ -1321,6 +1360,36 @@ body {
     .peng {
         width: 20vw;
     }
+
+    .name-dell,
+    .name-tik,
+    .name-faii,
+    .name-toey,
+    .name-peng {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .box-white-text,
+    .paragraph1,
+    .text-nineteen,
+    .text-fourteen {
+        font-family: 'Athiti', sans-serif;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .para-first {
+        font-family: 'Athiti', sans-serif;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .main {
+        font-size: 3.5vw;
+    }
+
     .name-dell,
     .name-tik,
     .name-faii,
@@ -1331,22 +1400,20 @@ body {
 }
 
 @media screen and (max-width: 360px) {
-    .box-white-text,
-    .paragraph1,
-    .text-nineteen,
-    .text-fourteen {
+    .box-white-text, .paragraph1, .text-nineteen, .text-fourteen{
         font-family: 'Athiti', sans-serif;
         text-align: center;
         font-size: 16px;
     }
-    .para-first {
+    .para-first{
         font-family: 'Athiti', sans-serif;
         text-align: center;
         font-size: 14px;
     }
-    .main {
+    .main{
         font-family: 'Athiti', sans-serif;
         text-align: center;
-        font-size: 18px;
+        font-size: 16px;
     }
 }
+

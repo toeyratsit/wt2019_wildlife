@@ -155,7 +155,11 @@ const questionList = [{
             text: 'นกกะเรียนมีการเกี้ยวพาราสีด้วยการบินขึ้นไปบนที่สูง',
             correct: false
         }, {
-            text: 'นกกะเรียนมีการเกี้ยวพาราสีด้วยการบินขึ้นไปบนที่สูง',
+<<<<<<< HEAD
+            text: 'สมันมีน้ำหนักประมาณ 30-50 กก.',
+=======
+            text: 'สมันมีถิ่นกำเนิดอยู่ที่เขมร',
+>>>>>>> d6031daa592d014034554cd1e8340cc12a8edf21
             correct: false
         }, {
             text: 'พะยูนโดยทั่วไปจะอาศัยอยู่ในบริเวณน้ำลึก',
@@ -228,7 +232,7 @@ const questionList = [{
         question: 'สัตว์ป่าในข้อใดแตกต่างจากพวก ?',
         answers: [{
             text: 'วาฬบรูด้า',
-            correct: true
+            correct: false
         }, {
             text: 'สมัน',
             correct: false
@@ -237,7 +241,7 @@ const questionList = [{
             correct: false
         }, {
             text: 'นกกระเรียน',
-            correct: false
+            correct: true
         }]
     }, {
         question: 'พระราชบัญญัติสงวนและคุ้มครองสัตว์ป่าฉบับแรกตราขึ้นเมื่อปี พ.ศ. ใด ?',
