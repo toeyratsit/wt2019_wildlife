@@ -122,6 +122,7 @@ body {
 
 
 /* reptile */
+
 .text-animal {
     width: 100%;
     text-align: center;
@@ -137,7 +138,6 @@ body {
     height: 30vh;
     margin: 15vh 0vw 0vh;
 }
-
 
 .milk {
     background-color: #F5F4ED;
@@ -247,7 +247,7 @@ body {
     margin: 0;
     background-image: linear-gradient(#FFEBB9, #F9E4AF, #E7CC87, #A9986B, #75694A);
     width: 100%;
-    height: 160%;
+    height: 180%;
 }
 
 .contact-text {
@@ -506,7 +506,6 @@ body {
         margin: 0px 0px 30px 0px;
         width: 3vw;
     }
-
     .github-all,
     .figma {
         margin: 20px 20px 20px 20px;
@@ -727,7 +726,6 @@ body {
         margin: 0px 0px 30px 0px;
         width: 4vw;
     }
-
     .github-all,
     .figma {
         margin: 20px 20px 20px 20px;
@@ -948,7 +946,6 @@ body {
         margin: 0px 0px 30px 0px;
         width: 4vw;
     }
-
     .github-all,
     .figma {
         margin: 20px 20px 20px 20px;
@@ -1126,7 +1123,6 @@ body {
         margin: 0px 0px 30px 0px;
         width: 4vw;
     }
-
     .github-all,
     .figma {
         margin: 20px 20px 20px 20px;
@@ -1302,22 +1298,22 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-    .box-white-text, .paragraph1, .text-nineteen, .text-fourteen{
+    .box-white-text,
+    .paragraph1,
+    .text-nineteen,
+    .text-fourteen {
         font-family: 'Athiti', sans-serif;
         text-align: center;
         font-size: 18px;
     }
-
-    .para-first{
+    .para-first {
         font-family: 'Athiti', sans-serif;
         text-align: center;
         font-size: 16px;
     }
-
     .main {
         font-size: 19px;
     }
-
     .dell,
     .tik,
     .faii,
@@ -1325,7 +1321,6 @@ body {
     .peng {
         width: 20vw;
     }
-
     .name-dell,
     .name-tik,
     .name-faii,
@@ -1336,20 +1331,22 @@ body {
 }
 
 @media screen and (max-width: 360px) {
-    .box-white-text, .paragraph1, .text-nineteen, .text-fourteen{
+    .box-white-text,
+    .paragraph1,
+    .text-nineteen,
+    .text-fourteen {
         font-family: 'Athiti', sans-serif;
         text-align: center;
         font-size: 16px;
     }
-    .para-first{
+    .para-first {
         font-family: 'Athiti', sans-serif;
         text-align: center;
         font-size: 14px;
     }
-    .main{
+    .main {
         font-family: 'Athiti', sans-serif;
         text-align: center;
         font-size: 18px;
     }
 }
-
