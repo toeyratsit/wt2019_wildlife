@@ -11,6 +11,7 @@ nextButton.addEventListener('click', () => {
 let RandomQuestion, CurrentQuestion
 
 function Start() {
+    score = 0
     console.log('started')
     StartButton.classList.add('hide')
     RandomQuestion = questionList.sort(() => Math.random() - .5)
@@ -57,7 +58,7 @@ function Answer(e) {
         nextButton.classList.remove('hide')
     } else {
         Swal.fire({
-            title: 'สุดยอดไปเลย !',
+            title: (score - 10) + ' คะแนน สุดยอดไปเลย !',
             icon: 'success',
             // imageUrl: 'confetti-right.png',
             // imageWidth: 200,
@@ -79,6 +80,7 @@ function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
         element.classList.add('correct')
+        score += 1
     } else {
         element.classList.add('wrong')
     }
